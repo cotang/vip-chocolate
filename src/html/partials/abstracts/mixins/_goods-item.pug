@@ -1,8 +1,0 @@
-mixin goodsItem(title, price, img, bonusClass)
-
-  +b.goods-item(class= bonusClass)
-    +e.img
-      img(src="img/" + img +".png", alt= title)
-    +e.H3.title #{title}
-    +e.price Цена #{price} рублей
-    +e.A.add(href="#") Добавить в корзину
