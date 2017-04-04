@@ -1,0 +1,63 @@
+extends partials/templates/_template.pug
+include partials/abstracts/mixins/_recommendations-item.pug
+
+block content
+  +b.page--recommendations
+
+    // Main
+    +b.MAIN.main
+
+      // Nav
+      include partials/components/_nav.pug 
+
+      // Breadcrumbs + basket
+      +b.breadcrumbs-basket
+        +b.breadcrumbs 
+          a(href="index.html") Главная страница
+          | >
+          span Рекомендации In chocolate veritas
+        +b.basket
+          +e.in В корзине
+          +e.summary 
+            span 1 товар на сумму 
+            | 573,75 р.
+
+      // Content
+      +b.SECTION.content
+        +e.H1.title Рекомендации In chocolate veritas
+
+      // Recommendations
+      +b.SECTION.recommendations
+        +e.gallery
+          +recommendationsItem('Рекомендация по выбору шоколадного набора', '28.04.2016', 'recommendation')
+          +recommendationsItem('Особенности оформления шоколадных наборов', '14.02.2016', 'recommendation')
+          +recommendationsItem('Основные рекомендации корпоративным клиентам', '10.01.2016', 'recommendation')
+          +recommendationsItem('Создание индивидуального набора шоколада', '05.10.2015', 'recommendation')
+          +recommendationsItem('Шоколад в подарок для детей и взрослых', '28.09.2015', 'recommendation')
+          +recommendationsItem('Рекомендация по выбору шоколадного набора', '28.04.2016', 'recommendation')
+          +recommendationsItem('Особенности оформления шоколадных наборов', '14.02.2016', 'recommendation')
+          +recommendationsItem('Основные рекомендации корпоративным клиентам', '10.01.2016', 'recommendation')
+          +recommendationsItem('Создание индивидуального набора шоколада', '05.10.2015', 'recommendation')
+
+      // Pagination
+      +b.pagination
+        +e.inner
+          +e.SPAN.page Вы смотрите
+          +e.UL.list
+            +e.item--active
+              a(href="page-recommendations.html") 1
+            +e.item 
+              a(href="page-recommendations.html") 2
+            +e.item 
+              a(href="page-recommendations.html") 3
+            +e.item 
+              a(href="page-recommendations.html") 4
+            +e.item 
+              a(href="page-recommendations.html") 5
+            +e.item 
+              a(href="page-recommendations.html") 6
+
+      // Copyright
+      include partials/components/_copyright.pug 
+
+

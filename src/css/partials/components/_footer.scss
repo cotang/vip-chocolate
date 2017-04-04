@@ -1,0 +1,98 @@
+.footer{
+  &__inner{
+    width: $container-xl;
+    margin: 0 auto 10px;
+    padding: 0 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    @media (max-width: $screen-xl){
+      width: $container-sm;
+      padding: 0;
+    }
+  }
+}
+
+.footer-catalogue{
+  flex: 0 0 70%;
+  max-width: 70%;
+  padding: 15px 20px 0;
+  @media (max-width: $screen-xl){
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 15px 0 0;
+  }
+
+  &__title{
+    color: #544b4a;
+    border-bottom: 1px solid #a58e70;
+    font-size: 14px;
+    line-height: (30/14);
+    margin: 0;
+    @include font-family('Lora Regular', normal, normal);
+    @media (max-width: $screen-xl){
+      font-size: 11px;
+    }
+  }
+  &__list{
+    padding-left: 0;
+    margin: 10px 0 0;
+    list-style-type: none;
+    columns: 4;
+    font-size: 14px;
+    color: #333333;
+    @media (max-width: $screen-xl){
+      columns: 3;
+      font-size: 11px;
+    }
+  }
+  &__item{
+    display: inline-block;
+    width: 100%;
+    margin: 4px 0;
+    @media (max-width: $screen-xl){
+      margin: 2px 0;
+    }
+  }
+}
+
+.footer-nav{
+  flex: 0 0 30%;
+  max-width: 30%;
+  padding: 15px 20px 0;
+  @media (max-width: $screen-xl){
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 15px 0 0;
+  }
+
+  &__title{
+    color: #544b4a;
+    border-bottom: 1px solid #a58e70;
+    font-size: 14px;
+    line-height: (30/14);
+    margin: 0;
+    @include font-family('Lora Regular', normal, normal);
+    @media (max-width: $screen-xl){
+      font-size: 11px;
+    }
+  }
+  &__list{
+    padding-left: 0;
+    margin: 10px 0 0;
+    list-style-type: none;
+    font-size: 14px;
+    color: #333333;
+    @media (max-width: $screen-xl){
+      columns: 2;
+      font-size: 11px;
+    }
+  }
+  &__item{
+    display: inline-block;
+    width: 100%;
+    margin: 4px 0;
+    @media (max-width: $screen-xl){
+      margin: 2px 0;
+    }
+  }
+}

@@ -1,0 +1,61 @@
+extends partials/templates/_template.pug
+
+block content
+  +b.page--contacts
+    // Main
+    +b.MAIN.main
+
+      // Nav
+      include partials/components/_nav.pug 
+
+      // Breadcrumbs + basket
+      +b.breadcrumbs-basket
+        +b.breadcrumbs 
+          a(href="index.html") Главная страница
+          | >
+          span Контакты In chocolate veritas
+        +b.basket
+          +e.in В корзине
+          +e.summary 
+            span 1 товар на сумму 
+            | 573,75 р.
+
+      // Contacts
+      +b.SECTION.contacts
+        +e.img
+          img(src="img/contacts.png", alt="contacts")
+        +e.H1.title Контакты In chocolate veritas
+        +e.inner
+          +e.text 
+            +e.promo
+              span Магазин элитного шоколада In chocolate veritas:
+            | мы принимаем заказы на корпоративные подарки из коллекции новогоднего шоколада.
+            +e.email 
+              span Эл. почта для заказов: 
+              a(href="mailto:info@vip-chocolate.ru") info@vip-chocolate.ru
+          +e.tel 
+            span Телефон для связи: 
+            a(href="tel:+78129423023") +7 (812) 
+              span 942-30-23
+
+      // Contacts form
+      +b.SECTION.checkout-form
+        +e.img
+          img(src="img/contacts-form.png", alt="contacts-form")
+        +e.FORM(action='', method='')
+          +e.LABEL.label
+            +e.INPUT.input(type='text', name='Имя', placeholder="Укажите ваше имя и фамилию")
+          +e.LABEL.label
+            +e.INPUT.input(type='tel', name='Телефон', placeholder="Контактный телефон в формате +7 (XXX) XXX-XX-XX")
+          +e.LABEL.label
+            +e.INPUT.input(type='email', name='Email', placeholder="Адрес электронной почты")
+          +e.LABEL.label
+            +e.INPUT.input(type='text', name='Тема письма', placeholder="Тема письма")
+          +e.LABEL.label
+            +e.TEXTAREA.textarea(name='Ваш комментарий', placeholder="Ваш комментарий")
+          +e.line Проверьте внимательно: все ли поля заполнены — это необходимо для отправки письма.
+          +b.BUTTON.btn(type='submit') Отправить заявку 
+
+
+
+

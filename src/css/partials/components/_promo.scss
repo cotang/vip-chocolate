@@ -1,0 +1,142 @@
+.promo{
+  &__gallery{
+    margin: 0 30px;
+    position: relative;    
+    @media (max-width: $screen-xl){
+      margin: 0 18px;
+    }
+    &:before{
+      content: '';
+      position: absolute;
+      z-index: 2;
+      pointer-events:none;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-width: 30px 30px;
+      border-color: $sand;
+      border-style: solid;
+      border-image: url(../img/border-corners.png) 30 30;
+      @media (max-width: $screen-xl){
+        border-width: 10px 10px;
+        border-image: url(../img/border-corners-300.png) 10 10;
+      }
+    }
+
+
+    .slick-arrow{
+      padding: 0;
+      position: absolute;
+      bottom: 40px;
+      z-index: 1;
+      color: transparent;
+      background-color: transparent;
+      border: none;
+      outline: none;
+      @include sprite($s-promo-arrow);
+      @media (max-width: $screen-xl){
+        display: none;
+      }      
+    }
+    .slick-prev{
+      left: 50%;
+      margin-left: -10px;
+      transform: rotate(180deg) translateX(100%);
+    }
+    .slick-next{      
+      right: 50%;
+      margin-right: -10px;
+      transform: translateX(100%);
+    }
+    .slick-dots{
+      position: absolute;
+      bottom: 40px;
+      right: 50%;
+      transform: translateX(50%);
+      padding-left: 0;
+      margin: 0;
+      list-style-type: none;
+      text-align: center;
+      @media (max-width: $screen-xl){
+        bottom: 5px;
+        right: -5px;
+        transform: scale(0.6);
+      } 
+
+      > li{
+        display: inline-block;
+        > button{
+          color: transparent;
+          background-color: transparent;
+          border: none;
+          display: block;
+          width: 15px;
+          height: 15px;
+          border-radius: 50%;
+          padding: 0;
+          margin: 0 5px;
+          background-color: #afafaf;
+        }
+      }
+      > li.slick-active{
+        > button{
+          background-color: #d2ae7b;
+        }
+      }
+    }
+  }
+}
+
+.promo-slide{
+  text-align: center;
+  position: relative;
+
+  img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+  }
+  &__text-wrapper{
+    position: absolute;
+    top: 55px;
+    left: 45px;
+    max-width: 360px;
+    text-align: left;
+    line-height: normal;
+    @media (max-width: $screen-xl){
+      top: 10px;
+      left: 10px;
+      max-width: 200px;
+    }
+  }
+  &__title{
+    color: #628099;
+    @include font-family('Lora Bold', normal, normal);
+    font-size: 30px;
+    @media (max-width: $screen-xl){
+      font-size: 14px;
+      margin-bottom: 2px;
+    }
+  }
+  &__text{
+    margin-top: 5px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    @media (max-width: $screen-xl){
+      font-size: 9px;
+      margin-bottom: 0;
+      line-height: normal;
+    }
+  }
+  .btn{
+    @media (max-width: $screen-xl){
+      transform: scale(0.6);
+      padding: 5px 10px;
+      position: relative;
+      left: -30px;
+    }
+  }
+
+}

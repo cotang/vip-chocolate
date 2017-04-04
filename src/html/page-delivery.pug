@@ -1,0 +1,63 @@
+extends partials/templates/_template.pug
+
+block content
+  +b.page--delivery
+
+    // Main
+    +b.MAIN.main
+
+      // Nav
+      include partials/components/_nav.pug 
+
+      // Breadcrumbs + basket
+      +b.breadcrumbs-basket
+        +b.breadcrumbs 
+          a(href="index.html") Главная страница
+          | >
+          span Доставка и оплата
+        +b.basket
+          +e.in В корзине
+          +e.summary 
+            span 1 товар на сумму 
+            | 573,75 р.
+
+      // Content
+      +b.SECTION.content
+        +e.H1.title Доставка и оплата
+        +e.description In chocolate veritas о доставке и оплате при заказе шоколадного подарка.
+        +e.inner
+          +e.column-text
+            +e.text
+              h2 Доставка по всему миру
+              p Наша компания принимает к оплате как наличный, так и безналичные способы платежей. Все шоколадные подарки предоставляются при 100% предоплате в рублях на основе заключения официального договора  на предоставление товаров и услуг частным лицам. Вы можете выбрать актуальный для Вас способ оплаты: наличный расчет, оплата кредитной картой, оплата электронными деньгами или по юридическому лицу.
+              p
+                a(href="#") Проконсультироваться по доставке
+          +e.column-img
+            +e.img
+              img(src="img/delivery1.png", alt="delivery-image")
+
+        +e.inner
+          +e.column-text
+            +e.text
+              h2 Способы оплаты при заказе
+              p Наша компания предоставляет Вам возможность выбрать удобный способ доставки: DHL Express, EMS Почта России или иной способ доставки на ваш выбор по согласованию с нашим менеджером при обработке заказа.
+              p
+                a(href="#") Проконсультироваться по оплате
+          +e.column-img
+            +e.img
+              img(src="img/delivery2.png", alt="delivery-image")
+
+
+      // Contacts
+      include partials/components/_contacts.pug 
+      // Copyright
+      include partials/components/_copyright.pug 
+
+
+
+
+
+
+
+
+

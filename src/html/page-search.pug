@@ -1,0 +1,88 @@
+extends partials/templates/_template.pug
+
+
+block content
+  +b.page--seacrh
+    // Main
+    +b.MAIN.main
+
+      // Nav
+      include partials/components/_nav.pug 
+
+      // Breadcrumbs + basket
+      +b.breadcrumbs-basket
+        +b.breadcrumbs 
+          a(href="index.html") Главная страница
+          | >
+          span Поиск по сайту
+        +b.basket
+          +e.in В корзине
+          +e.summary 
+            span 1 товар на сумму 
+            | 573,75 р.
+
+
+      // Content
+      +b.SECTION.content
+        +e.H1.title Поиск по сайту
+
+      // Search
+      +b.SECTION.search
+
+        +b.FORM.search-form(action='', method='')
+          +e.LABEL.label
+            +e.INPUT.input(type='text', name='Поиск', placeholder="Поиск по сайту")
+
+        +b.SECTION.search-results
+          +e.H2.title Результаты поиска по запросу "Шоколад":
+          +e.OL.list
+            +e.LI.item
+              +e.H3.heading Главная страница
+              +e.A.link(href='http://vip-chocolate.ru') http://vip-chocolate.ru
+            +e.LI.item
+              +e.H3.heading О компании In chocolate veritas
+              +e.A.link(href='http://vip-chocolate.ru/about/') http://vip-chocolate.ru/about/
+            +e.LI.item
+              +e.H3.heading Услуги In chocolate veritas
+              +e.A.link(href='http://vip-chocolate.ru/services/') http://vip-chocolate.ru/services/
+            +e.LI.item
+              +e.H3.heading Брендирование шоколада
+              +e.A.link(href='http://vip-chocolate.ru/services/branding-chocolate/') http://vip-chocolate.ru/services/branding-chocolate/
+            +e.LI.item
+              +e.H3.heading Доставка и оплата
+              +e.A.link(href='http://vip-chocolate.ru/services/delivery&payment/') http://vip-chocolate.ru/services/delivery&payment/
+            +e.LI.item
+              +e.H3.heading Главная страница
+              +e.A.link(href='http://vip-chocolate.ru') http://vip-chocolate.ru
+            +e.LI.item
+              +e.H3.heading О компании In chocolate veritas
+              +e.A.link(href='http://vip-chocolate.ru/about/') http://vip-chocolate.ru/about/
+            +e.LI.item
+              +e.H3.heading Услуги In chocolate veritas
+              +e.A.link(href='http://vip-chocolate.ru/services/') http://vip-chocolate.ru/services/
+            +e.LI.item
+              +e.H3.heading Брендирование шоколада
+              +e.A.link(href='http://vip-chocolate.ru/services/branding-chocolate/') http://vip-chocolate.ru/services/branding-chocolate/
+            +e.LI.item
+              +e.H3.heading Доставка и оплата
+              +e.A.link(href='http://vip-chocolate.ru/services/delivery&payment/') http://vip-chocolate.ru/services/delivery&payment/
+
+          // Pagination
+          +b.pagination
+            +e.inner
+              +e.SPAN.page Вы смотрите
+              +e.UL.list
+                +e.item--active
+                  a(href="page-search.html") 1
+                +e.item 
+                  a(href="page-search.html") 2
+                +e.item 
+                  a(href="page-search.html") 3
+                +e.item 
+                  a(href="page-search.html") 4
+                +e.item 
+                  a(href="page-search.html") 5
+                +e.item 
+                  a(href="page-search.html") 6
+
+

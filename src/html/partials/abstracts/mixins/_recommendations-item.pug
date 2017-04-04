@@ -1,0 +1,9 @@
+mixin recommendationsItem(title, date, img)
+
+  +b.recommendations-item
+    +e.img
+      img(src="img/" + img +".png", alt= title)
+    +e.H3.title 
+      a(href="page-recommendations-single.html") #{title}
+    +e.date #{date}
+

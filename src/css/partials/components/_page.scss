@@ -1,0 +1,94 @@
+.main{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  @media (max-width: $screen-xl){
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+.page{
+  width: $container-xl;
+  margin: 0 auto;
+  position: relative;
+  @media (max-width: $screen-xl){
+    width: $container-sm;
+  }
+  &:before{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-width: 200px 100px;
+    border-color: $sand;
+    border-style: solid;
+    border-image: url(../img/main-bg.png) 200 100 round stretch;
+    @media (max-width: $screen-xl){
+      border-width: 125px 50px;
+      border-image: url(../img/main-bg-300.png) 125 50 round stretch;
+    }
+  }
+  &:after{
+    content: '';
+    position: absolute;
+    z-index: -2;
+    left: 100px;
+    width: calc(100% - 200px);
+    top: 200px;
+    height: calc(100% - 400px);
+    background-color: $sand;
+    background-image: url(../img/main-bg-color.png);
+    background-repeat: repeat;
+    @media (max-width: $screen-xl){
+      left: 40px;
+      width: calc(100% - 80px);
+      top: 120px;
+      height: calc(100% - 240px);
+    }
+  }
+
+
+
+  &--brand, &--corporate-clients, &--guarantee, &--recommendations-single, &--services-single {
+    .content__img{
+      padding: 30px 20px 20px;
+      position: relative;
+      &:after{
+        content: '';
+        position: absolute;
+        z-index: 1;
+        pointer-events: none;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-width: 20px 20px;
+        border-color: transparent;
+        border-style: solid;
+        border-image: url(../img/border-corners-transparent.png) 20 20 stretch;
+      }
+      @media (max-width: $screen-xl){
+        padding: 30px 20px 20px;
+        margin-top: 20px;
+      }
+    }
+    .content__img-text{
+      @media (max-width: $screen-xl){
+        margin: 0 -20px;
+        font-size: 14px;
+      }
+    }
+  }
+  
+  &--delivery{
+    .content__img{
+      @media (max-width: $screen-xl){
+        margin: 0 20px;
+      }
+    }
+  }
+
+}
+

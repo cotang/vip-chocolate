@@ -1,0 +1,53 @@
+extends partials/templates/_template.pug
+
+
+block content
+  +b.page--services
+
+    // Main
+    +b.MAIN.main
+
+      // Nav
+      include partials/components/_nav.pug 
+
+      // Breadcrumbs + basket
+      +b.breadcrumbs-basket
+        +b.breadcrumbs 
+          a(href="index.html") Главная страница
+          | >
+          span Услуги In chocolate veritas
+        +b.basket
+          +e.in В корзине
+          +e.summary 
+            span 1 товар на сумму 
+            | 573,75 р.
+
+      // Content
+      +b.SECTION.content
+        +e.H1.title Услуги In chocolate veritas
+
+      // Services
+      +b.SECTION.services
+        +e.gallery
+          +b.services-item
+            +e.img
+              img(src="img/services.png", alt="Брендирование шоколада")
+            +e.H3.title 
+              a(href="page-services-single.html") Брендирование шоколада
+          +b.services-item
+            +e.img
+              img(src="img/services.png", alt="Брендирование шоколада")
+            +e.H3.title 
+              a(href="page-services-single.html") Брендирование шоколада
+          +b.services-item
+            +e.img
+              img(src="img/services.png", alt="Брендирование шоколада")
+            +e.H3.title 
+              a(href="page-services-single.html") Брендирование шоколада
+
+      // Gifts
+      include partials/components/_gifts.pug 
+      // Copyright
+      include partials/components/_copyright.pug 
+
+

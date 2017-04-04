@@ -1,0 +1,83 @@
+.clients-section{
+  text-align: center;
+  margin-top: 45px;
+  @media (max-width: $screen-xl){
+    margin-top: 25px;
+  }
+
+  &__title{
+    margin: 0 65px 10px;
+    position: relative;
+    @include font-family('Lora Bold', normal, normal);
+    font-size: 25px;
+    color: #b5a282;
+    @media (max-width: $screen-xl){
+      font-size: 14px;
+      margin: 0 30px 10px;
+    }
+    &:before, &:after{
+      content: '';
+      position: absolute;
+      width: 100%;
+      left: 0;
+      height: 1px;
+      min-height: 1px;
+      background-color: #e1cdaf;
+      @media (max-width: $screen-xl){
+        display: none;
+      }
+    }
+    &:before{
+      top: 16px;
+    }
+    &:after{
+      bottom: 13px;
+    }
+    span{
+      position: relative;
+      z-index: 3;
+      padding: 10px;
+      background-color: $sand;
+      background-image: url(../img/main-bg-color.png);
+      background-repeat: repeat;
+      @media (max-width: $screen-xl){
+        background-image: none;
+        background-color: transparent;
+        padding: 0;
+      }
+    }
+  }
+  &__inner{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 60px 35px;
+    @media (max-width: $screen-xl){
+      margin: 0 10px 15px;
+    }
+  }
+  &__img{
+    flex: 0 0 16.6666%;
+    max-width: 16.6666%;
+    padding: 25px 10px;
+    @media (max-width: $screen-xl){
+      flex: 0 0 33.3333%;
+      max-width: 33.3333%;
+      padding: 15px 10px;
+    }
+    
+    img{
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: contain;
+    }
+  }
+  &__link{
+    color: #9a8561;
+    background-color: #f0debf;
+    border: 1px solid #d1c09f;
+    box-shadow: 0 0 1px 1px rgba(255,255,255,.7);
+    padding: 7px 10px;
+    font-size: 13px;
+  }
+}

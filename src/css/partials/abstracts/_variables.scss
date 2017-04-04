@@ -1,0 +1,132 @@
+/*
+  Project variables
+  =================
+*/
+
+
+/*
+  Flex Sass grid generator variables
+  ==================================
+  [flex-sass-grid-generator]
+
+*/
+
+$base-font-size:              16px;
+$grid-columns:                12 !default;
+$grid-gutter-width:           20px !default;
+
+$screen-xs:                   0; // Extra small screen / phone
+$screen-md:                   768px; // Medium screen / tablet
+$screen-xl:                   960px; // Extra large screen / wide desktop
+
+
+
+$container-sm:                300px;
+$container-xl:                940px;
+
+$container-max-widths: (
+        sm:                   480px,
+        md:                   700px,
+        lg:                   940px,
+        xl:                   1120px
+) !default;
+
+
+$grid-breakpoints: (
+        xs:                   0,
+        sm:                   540px,
+        md:                   768px,
+        lg:                   940px,
+        xl:                   1280px
+) !default;
+
+/*
+  Sass MQ variables
+  =================
+
+  [sass-mq](https://github.com/sass-mq/sass-mq)
+*/
+
+$mq-breakpoints: (
+        xs:                   0px,
+        sm:                   540px,
+        md:                   768px,
+        lg:                   1024px,
+        xl:                   1280px
+) !default;
+
+
+
+//------------------------------------------------------------------------------
+//  Colors
+//------------------------------------------------------------------------------
+
+
+// Color table 
+
+$white:                       #ffffff;
+$black:                       #000000;
+$grey:                        #333333;
+
+$brown:                       #4d3e2b;
+$sand:                        #f4e6cc;
+
+$brown-border:                #bb9f7a;
+
+// $grey:                        #cccccc;
+// $light-grey:                  #eaeaea;
+// $lighter-grey:                #f0f0f0;
+// $text-light-grey:             #999999;
+// $text-grey:                   #666666;
+// $text-dark-grey:              #333333;
+
+$text-shadow:                 0px 1px 1px rgba(255, 255, 255, 1);
+$text-shadow-sand:            0px 1px 1px #eddabc;
+
+
+
+$sand-gradient:               linear-gradient(0deg, #dfc2a2, #e5caaa, #e6c7a7 14.2%, #e4c29f 32.1%, #dcb07f 82.1%, #d9af7c 89.2%, #daad79);
+
+
+
+// Colors in use
+
+$body-bg:                     $sand;
+$text-color:                  $grey;
+
+
+$link-color:                  $brown;
+
+$text-white:                  $white;
+
+
+
+
+
+//------------------------------------------------------------------------------
+//  Typography
+//------------------------------------------------------------------------------
+
+
+$font-family:                   'Lora Regular', Helvetica, Arial, sans-serif;
+$font-family--italic:           'Lora Italic', Helvetica, Arial, sans-serif;
+$font-family--bold:             'Lora Bold', Helvetica, Arial, sans-serif;
+$font-family--bold-italic:      'Lora Bold Italic', Helvetica, Arial, sans-serif;
+
+
+
+$font-size:                     16px;
+
+// $font-size-small:               13px;
+// $font-size-smaller:             12px;
+// $font-size-smallest:            11px;
+
+
+// $font-size-h1:                24px;
+// $font-size-h2:                20px;
+
+
+$line-height:                 (22/16);
+
+
+

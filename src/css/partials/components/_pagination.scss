@@ -1,0 +1,72 @@
+.pagination{
+  margin: 0 90px 0;
+  @media (max-width: $screen-xl){
+    margin: 10px 20px 0;
+  }
+
+  &__inner{
+    display: inline-flex;
+    align-items: baseline;
+    overflow: hidden;
+    border: 1px solid $brown-border;
+    border-radius: 1px;
+    font-size: 14px;
+    position: relative;
+    @media (max-width: $screen-xl){
+      font-size: 12px;
+    }
+  }
+
+
+  &__page{
+    padding: 5px 5px 5px 15px;
+    background-color: #dec9ab;
+    position: relative;
+    @media (max-width: $screen-xl){
+      padding-left: 10px;
+    }
+
+    &:after{
+      content: '';
+      position: absolute;
+      z-index: -1;
+      top: -6px;
+      right: -8px;
+      background-color: #dec9ab;
+      border: 1px solid $brown-border;
+      transform: rotate(45deg);
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  &__list{
+    margin: 0;
+    padding: 0 10px 0 25px;
+    @include font-family('Lora Bold', normal, normal);
+    @media (max-width: $screen-xl){
+      padding: 0 10px 0 25px;
+    }
+  }
+
+  &__item{
+    display: inline-block;
+    a{
+      display: block;
+      padding: 5px 7px;
+      @media (max-width: $screen-xl){
+        padding: 5px 5px;
+      }
+      &:hover{
+        background-color: #dec9ab;
+      }
+    }
+    &--active{
+      a{
+        color: #8d6d42;
+      }
+    }
+  }
+
+
+}

@@ -1,0 +1,243 @@
+.calendar-section{
+  text-align: center;
+  margin-top: 35px;
+  &__title{
+    margin: 0 65px 10px;
+    position: relative;
+    @include font-family('Lora Bold', normal, normal);
+    font-size: 25px;
+    color: #b5a282;
+    @media (max-width: $screen-xl){
+      font-size: 14px;
+      margin: 0 30px 10px;
+    }
+    &:before, &:after{
+      content: '';
+      position: absolute;
+      width: 100%;
+      left: 0;
+      height: 1px;
+      min-height: 1px;
+      background-color: #e1cdaf;
+      @media (max-width: $screen-xl){
+        display: none;
+      }
+    }
+    &:before{
+      top: 16px;
+    }
+    &:after{
+      bottom: 13px;
+    }
+    span{
+      position: relative;
+      z-index: 3;
+      padding: 10px;
+      background-color: $sand;
+      background-image: url(../img/main-bg-color.png);
+      background-repeat: repeat;
+      @media (max-width: $screen-xl){
+        background-image: none;
+        background-color: transparent;
+        padding: 0;
+      }
+    }
+  }
+  &__name{
+    color: #b65e40;
+  }
+  &__text{    
+    @media (max-width: $screen-xl){
+      font-size: 12px;
+      line-height: (18/12);
+    }
+    p{
+      margin: 0;
+      display: inline-block;
+      @media (max-width: $screen-xl){
+        display: block;
+      }
+    }
+  }
+}
+
+.calendar{
+  clear: both;
+  position: relative;
+  background-color: #e1cdaf;
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  margin: 30px 45px 0;
+  padding: 10px;
+  @media (max-width: $screen-xl){
+    margin: 30px 15px 0;
+  }
+
+  &__controls{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 50px 0;
+    @media (max-width: $screen-xl){
+      margin: 30px 30px 0;
+    }
+  }
+  &__next{
+    display: inline-block;
+    @include sprite($s-calendar-arrow);
+  }
+  &__prev{
+    display: inline-block;
+    @include sprite($s-calendar-arrow);
+    transform: rotate(180deg);
+  }
+
+  &__links{
+    border: 1px solid #fff;
+    border-top: none;
+    &:after, &:before{
+      content: '';
+      display: table;
+    }
+    &:after{
+      clear: both;
+    }
+  }
+  &__link{    
+    width: 50%;
+    display: block;
+    float: left;
+    padding: 7px 0;
+    text-shadow: 0px 1px 1px rgba(240, 226, 198, 0.1);
+    @media (max-width: $screen-xl){
+      font-size: 11px;
+      color: #818181;
+    }
+
+    &:hover{
+      background-color: #bbaa88;
+      color: #fff;
+      text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.1);
+    }
+    &--show-calendar{
+      border-right: 1px solid #fff;
+      @media (max-width: $screen-xl){
+        border-right: none;
+        width: 60%;
+      }
+      span{
+        @media (max-width: $screen-xl){
+          display: none;
+        }
+      }
+    }
+    &--events-list{
+      @media (max-width: $screen-xl){
+        width: 40%;
+      }
+      span{
+        @media (max-width: $screen-xl){
+          display: none;
+        }
+      }
+    }
+  }
+
+  &__items{
+    &:after, &:before{
+      content: '';
+      display: table;
+    }
+    &:after{
+      clear: both;
+    }
+  }
+  &__item{
+    width: 50%;
+    float: left;
+    border: 1px solid #fff;
+    @media (max-width: $screen-xl){
+      width: 100%;
+    }
+    &:not(:first-of-type){
+      border-left: none;
+      @media (max-width: $screen-xl){
+        display: none;
+      }
+    }
+  }
+  &__month{
+    margin: 15px 0 15px;
+    width: 100%;
+    border-collapse: separate;
+    font-size: 15px;
+    @include font-family('Lora Bold', normal, normal);
+    th, td{
+      padding: 6px 5px;
+      border: 3px solid transparent;
+    }
+    .event{
+      color: #9f411d;
+      position: relative;
+      &:hover{
+        > .event-popup{
+          display: block;
+        }
+      }
+    }
+    .unactive{
+      color: #666666;
+    }
+    .current{
+      color: #9b7862;
+      border: 3px solid #9b7862;
+      background-color: $sand;
+    }
+  }
+  &__month-title{
+    border-bottom: 1px solid #fff;
+    font-size: 20px;
+    color: #666;
+    background-image: linear-gradient( 0deg, rgb(237,221,192) 0%, rgb(225,205,175) 100%);
+    padding: 10px 0;
+  }
+}
+
+
+
+.event-popup{
+  display: none;
+  position: absolute;
+  bottom: 100%;
+  margin-bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: left;
+  background-color: $sand;
+  padding: 10px;
+  min-width: 190px;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.5); 
+  &:after{
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    width: 20px;
+    height: 20px;
+    background-color: $sand;
+    box-shadow: 2px 2px 0 0 rgba(0,0,0,0.1); 
+  }
+  // display: none;
+  &__date{
+    @include font-family('Lora Regular', normal, normal);
+  }
+  &__title{
+    color: #333333;
+    
+  }
+}

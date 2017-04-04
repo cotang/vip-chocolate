@@ -1,0 +1,115 @@
+include ../abstracts/bemto/bemto.pug
+include ../abstracts/mixins/_goods-item.pug
+
+// Footer
++b.FOOTER.footer
+  +e.inner
+
+    +b.SECTION.footer-catalogue
+      +e.H3.title Каталог подарочного шоколада
+      +e.UL.list
+        +e.item
+          +e.A.link(href="#") 8 марта
+        +e.item
+          +e.A.link(href="#") Для женщин
+        +e.item
+          +e.A.link(href="#") Для мужчин
+        +e.item
+          +e.A.link(href="#") Санкт-Петербург
+        +e.item
+          +e.A.link(href="#") Эксклюзив
+        +e.item
+          +e.A.link(href="#") День знаний
+        +e.item
+          +e.A.link(href="#") День учителя
+        +e.item
+          +e.A.link(href="#") Москва
+        +e.item
+          +e.A.link(href="#") Японские мотивы
+        +e.item
+          +e.A.link(href="#") Русские мотивы
+        +e.item
+          +e.A.link(href="#") Подарочная
+        +e.item
+          +e.A.link(href="#") Комплимент
+        +e.item
+          +e.A.link(href="#") 8 марта
+        +e.item
+          +e.A.link(href="#") Для женщин
+        +e.item
+          +e.A.link(href="#") Для мужчин
+        +e.item
+          +e.A.link(href="#") Санкт-Петербург
+        +e.item
+          +e.A.link(href="#") Эксклюзив
+        +e.item
+          +e.A.link(href="#") День знаний
+        +e.item
+          +e.A.link(href="#") День учителя
+        +e.item
+          +e.A.link(href="#") Москва
+        +e.item
+          +e.A.link(href="#") Японские мотивы
+        +e.item
+          +e.A.link(href="#") Русские мотивы
+        +e.item
+          +e.A.link(href="#") Подарочная
+        +e.item
+          +e.A.link(href="#") Комплимент
+
+    +b.SECTION.footer-nav
+      +e.H3.title О компании In chocolate veritas
+      +e.UL.list
+        +e.item
+          +e.A.link(href="index.html") Главная
+        +e.item
+          +e.A.link(href="page-about.html") О компании
+        +e.item
+          +e.A.link(href="page-clients.html") Корпоративным клиентам
+        +e.item
+          +e.A.link(href="page-delivery.html") Доставка и оплата
+        +e.item
+          +e.A.link(href="page-contacts.html") Контакты
+
+
+
+// Overlay
++b.overlay
+  +e.bg
+  +e.inner
+    +e.close(href="/")
+    // Order
+    +b.SECTION.order
+      +e.H2.title Ваш заказ в магазине In chocolate veritas
+      +e.text В вашей корзине:
+      +e.UL.list
+        +e.LI.item 
+          span Шоколадный сувенир 
+          | в количестве 3 шт. на сумму 530 руб.
+        +e.LI.item 
+          span Шоколадный набор 
+          | в количестве 1 шт. на сумму 130 руб.
+        +e.summary Итого:
+          span 4 шт. на сумму 660 руб.
+      +b.A.btn(href="#") Оформить заказ
+    // Order similar goods
+    +b.SECTION.order-similar-goods
+      +e.H2.title 
+        span С этим товаром также смотрят также
+      +e.gallery
+        +goodsItem('Ассорти 8 марта', '120', 'cat1')
+        +goodsItem('Визитка 8 марта', '200', 'cat2')
+        +goodsItem('Деревянная шкатулка 8 марта', '200', 'cat3', 'category-item--new')
+        +goodsItem('Шкатулка 8 марта', '200', 'cat4')
+
+
+
+
+
+
+
+
+
+  //- svg(width='30', height='30')
+  //-   use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='#package')
+

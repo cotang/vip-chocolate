@@ -1,0 +1,56 @@
+extends partials/templates/_template.pug
+
+block content
+  +b.page--about
+
+    // Main
+    +b.MAIN.main
+
+      // Nav
+      include partials/components/_nav.pug 
+
+      // Breadcrumbs + basket
+      +b.breadcrumbs-basket
+        +b.breadcrumbs 
+          a(href="index.html") Главная страница
+          | >
+          span О компании In chocolate veritas
+        +b.basket
+          +e.in В корзине
+          +e.summary 
+            span 1 товар на сумму 
+            | 573,75 р.
+
+      // Content
+      +b.SECTION.content
+        +e.H1.title О компании In chocolate veritas
+        +e.inner
+          +e.column-text
+            +e.text
+              h3 Уважаемые дамы и господа!
+              p Шоколадный бутик  In chocolate veritas приветствует Вас!
+              p Мы представляем марку шоколада Chocolate Point, созданную по рецептуре, с использованием бельгийского сырья и современных технологий.
+              p В шоколадном бутике In chocolate veritas, используя неограниченные возможности петербургских шоколатье, возведут Ваши   желания  в ранг совершенства, тем самым подарив ощущение радости и хорошего настроения.
+              p Мы сотрудничаем с различными компаниями и частными лицами, предлагая свои услуги на рынке корпоративных подарков и сувениров, в том числе с индивидуальным дизайном.
+              h2 Подарки из шоколада к Новому 2017 году
+              p Шоколадный бутик In chocolate veritas предлагает Вам шоколадные подарки с доставкой в любую точку России при оплате наличным и безналичным расчетом. 
+              p Мы умеем делать подарки вкусными, стильными и оригинальными! Будем рады оказаться Вам полезными!
+              p С  уважением, Дудинская Валентина 
+              p Директор  по  развитию.
+          +e.column-img
+            +e.img
+              img(src="img/about.png", alt="about-image")
+
+      // Gifts
+      include partials/components/_gifts.pug 
+      // Copyright
+      include partials/components/_copyright.pug 
+
+
+
+
+
+
+
+
+
