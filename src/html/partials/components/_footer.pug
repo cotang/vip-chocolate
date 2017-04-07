@@ -91,16 +91,17 @@ include ../abstracts/mixins/_goods-item.pug
           | в количестве 1 шт. на сумму 130 руб.
         +e.summary Итого:
           span 4 шт. на сумму 660 руб.
-      +b.A.btn(href="#") Оформить заказ
+      +e.btn
+        +b.A.btn(href="#") Оформить заказ
     // Order similar goods
     +b.SECTION.order-similar-goods
       +e.H2.title 
         span С этим товаром также смотрят также
       +e.gallery
-        +goodsItem('Ассорти 8 марта', '120', 'cat1')
-        +goodsItem('Визитка 8 марта', '200', 'cat2')
-        +goodsItem('Деревянная шкатулка 8 марта', '200', 'cat3', 'category-item--new')
-        +goodsItem('Шкатулка 8 марта', '200', 'cat4')
+        +goodsItem('Ассорти 8 марта', '120', 'goods-item')
+        +goodsItem('Визитка 8 марта', '200', 'goods-item')
+        +goodsItem('Ассорти 8 марта', '200', 'goods-item')
+        +goodsItem('Визитка 8 марта', '200', 'goods-item')
 
 
 

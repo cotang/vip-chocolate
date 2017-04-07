@@ -19,6 +19,7 @@ body {
   background-image: url(../img/body-bg.jpg);
   background-position: top center;
   background-repeat: repeat;
+  background-size: cover;
   color: $text-color;
   @include font-family('Lora Regular', normal, normal);
   font-size: $font-size;

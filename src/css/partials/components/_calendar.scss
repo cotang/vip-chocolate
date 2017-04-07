@@ -1,6 +1,9 @@
 .calendar-section{
   text-align: center;
-  margin-top: 35px;
+  margin-top: 40px;
+  @media (max-width: $screen-xl){
+    margin-top: 20px;
+  }
   &__title{
     margin: 0 65px 10px;
     position: relative;
@@ -27,7 +30,7 @@
       top: 16px;
     }
     &:after{
-      bottom: 13px;
+      bottom: 14px;
     }
     span{
       position: relative;
@@ -70,7 +73,23 @@
   margin: 30px 45px 0;
   padding: 10px;
   @media (max-width: $screen-xl){
-    margin: 30px 15px 0;
+    margin: 20px 15px 0;
+  }
+  &:before{
+    content: '';
+    position: absolute;
+    background-image: url(../img/calendar-divider-300.png);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    width: 240px;
+    height: 18px;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+    @media (max-width: $screen-xl){
+      display: block;
+    }
   }
 
   &__controls{
@@ -82,7 +101,7 @@
     justify-content: space-between;
     margin: 30px 50px 0;
     @media (max-width: $screen-xl){
-      margin: 30px 30px 0;
+      margin: 25px 30px 0;
     }
   }
   &__next{
@@ -115,6 +134,7 @@
     @media (max-width: $screen-xl){
       font-size: 11px;
       color: #818181;
+      padding: 5px 0;
     }
 
     &:hover{
@@ -170,14 +190,25 @@
     }
   }
   &__month{
-    margin: 15px 0 15px;
+    margin: 15px 0 10px;
+    padding: 0 20px;
     width: 100%;
     border-collapse: separate;
     font-size: 15px;
     @include font-family('Lora Bold', normal, normal);
+    @media (max-width: $screen-xl){
+      padding: 0;
+      font-size: 13px;
+      margin: 5px 0 5px;
+    }
+
     th, td{
       padding: 6px 5px;
-      border: 3px solid transparent;
+      border: 2px solid transparent;
+      @media (max-width: $screen-xl){
+        padding: 1px 5px;
+        // border: 2px solid transparent;
+      }
     }
     .event{
       color: #9f411d;
@@ -193,8 +224,11 @@
     }
     .current{
       color: #9b7862;
-      border: 3px solid #9b7862;
+      border: 2px solid #9b7862;
       background-color: $sand;
+      // @media (max-width: $screen-xl){
+      //   border: 2px solid #9b7862;
+      // }
     }
   }
   &__month-title{
@@ -203,6 +237,10 @@
     color: #666;
     background-image: linear-gradient( 0deg, rgb(237,221,192) 0%, rgb(225,205,175) 100%);
     padding: 10px 0;
+    @media (max-width: $screen-xl){
+      font-size: 16px;
+      padding: 5px 0;
+    }
   }
 }
 

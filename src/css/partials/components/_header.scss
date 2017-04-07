@@ -1,11 +1,15 @@
 .header{
+  margin-bottom: 25px;
+  @media (max-width: $screen-xl){
+    margin-bottom: 10px;
+  }
+
   &__inner{
     width: $container-xl;
-    margin: 0 auto 20px;
+    margin: 0 auto 0;
     position: relative;
     @media (max-width: $screen-xl){
       width: $container-sm;
-      margin-bottom: 10px;
     }
   }
   &__logo{

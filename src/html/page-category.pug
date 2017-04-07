@@ -28,8 +28,12 @@ block content
           +b.category-sorting
             span Сортировать:
             +e.type
-              span По цене
-              span По популярности
+              +e.A.sort(href="#") По цене
+              +e.UL.list
+                +e.LI.item
+                  a(href="#") По популярности
+                //- +e.LI.item
+                //-   a(href="#") По популярности 2
           +e.summary Всего 10 товаров
         +e.gallery
           +goodsItem('Ассорти 8 марта', '120', 'goods-item')
@@ -42,11 +46,13 @@ block content
           +goodsItem('Лолипоп женский', '650', 'goods-item')
           +goodsItem('Набор 6+1 8 марта', '2000', 'goods-item')
           +goodsItem('Набор с конфетами 8 марта', '2000', 'goods-item')
-          +b.A.good-item--next(href="#")
-            +e.H3.title Следующий праздник 
-              span 23 февраля
-            +e.text Мы приготовили всего 12 шоколадных подарков из шоколада на любой вкус.
-            +e.SPAN.choose Выбрать подарок
+          +e.item
+            +b.A.goods-item--next(href="#")
+              +e.H3.title 
+                span Следующий праздник:
+                | 23 февраля
+              +e.text Мы приготовили всего 12 шоколадных подарков из шоколада на любой вкус.
+              +e.SPAN.choose Выбрать подарок
 
       // Gifts
       include partials/components/_gifts.pug 

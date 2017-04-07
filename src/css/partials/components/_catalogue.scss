@@ -1,6 +1,6 @@
 .catalogue{
   text-align: center;
-  margin-top: 10px;
+  margin-top: 15px;
   &__title{
     margin: 0 65px 30px;
     position: relative;
@@ -10,6 +10,7 @@
     @media (max-width: $screen-xl){
       font-size: 14px;
       margin: 0 30px;
+      color: #a7926f;
     }
     &:before, &:after{
       content: '';
@@ -27,7 +28,7 @@
       top: 16px;
     }
     &:after{
-      bottom: 13px;
+      bottom: 14px;
     }
     span{
       position: relative;
@@ -52,7 +53,7 @@
     .slick-arrow{
       padding: 0;
       position: absolute;
-      bottom: 40px;
+      bottom: 100px;
       z-index: 1;
       color: transparent;
       background-color: transparent;
@@ -62,18 +63,28 @@
       transition: none;
       &:hover{
         @include sprite($s-catalogue-arrow-hover);
+        @media (max-width: $screen-xl){
+          @include sprite($s-catalogue-arrow-300);
+        }
       }
       @media (max-width: $screen-xl){
         bottom: 125px;
+        @include sprite($s-catalogue-arrow-300);
       }
     }
     .slick-prev{
-      left: 0;
+      left: -15px;
       transform: rotate(180deg) translateX(100%);
+      @media (max-width: $screen-xl){
+        left: 4px;
+      }
     }
     .slick-next{      
-      right: 0;
+      right: -15px;
       transform: translateX(100%);
+      @media (max-width: $screen-xl){
+        right: 4px;
+      }
     }
   }
   &__gallery-item{
@@ -84,7 +95,7 @@
     flex-wrap: wrap;
     align-items: baseline;
     justify-content: space-between;
-    margin: 20px 65px 0;
+    margin: 15px 65px 0;
     font-size: 13px;
     color: #9a8561;
     @media (max-width: $screen-xl){
@@ -161,3 +172,326 @@
     }
   }
 }
+
+.catalogue-item{
+  padding-top: 5px;
+  &__bg{
+    margin: 10px 75px 0;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    @media (max-width: $screen-xl){
+      margin: 20px 25px 0;
+      padding: 10px 0 15px;
+    }
+
+    &:before{
+      content: '';
+      position: absolute;
+      z-index: -1;
+      pointer-events: none;
+      top: 15px;
+      left: 15px;
+      width: calc(100% - 30px);
+      height: calc(100% - 30px);
+      background-color: #fff;
+      @media (max-width: $screen-xl){
+        top: 10px;
+        left: 10px;
+        width: calc(100% - 20px);
+        height: calc(100% - 20px);
+      }
+    }
+    &:after{
+      content: '';
+      position: absolute;
+      z-index: -1;
+      pointer-events: none;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-width: 20px 20px;
+      border-color: transparent;
+      border-style: solid;
+      border-image: url(../img/border-corners-white.png) 20 20 stretch;
+      @media (max-width: $screen-xl){
+        border-width: 12px 12px;
+      }
+    }
+  }
+  &__gallery{
+    flex: 0 0 52.5%;
+    max-width: 52.5%;
+    padding: 20px 20px;
+    border-right: 1px solid #e7e7e7;
+    position: relative;
+    @media (max-width: $screen-xl){
+      flex: 0 0 100%;
+      max-width: 100%;
+      padding: 0 10px;
+    }
+    .slick-arrow{
+      padding: 0;
+      position: absolute;
+      top: 50%;
+      z-index: 1;
+      color: transparent;
+      background-color: transparent;
+      border: none;
+      outline: none;
+      @include sprite($s-item-arrow);
+      @media (max-width: $screen-xl){
+        display: none;
+      }      
+    }
+    .slick-prev{
+      left: 20px;
+      transform: rotate(180deg) translate(0, 50%);
+      @media (max-width: $screen-xl){
+        left: 0;
+      } 
+    }
+    .slick-next{      
+      right: 20px;
+      transform: translate(0, -50%);
+      @media (max-width: $screen-xl){
+        right: 0;
+      } 
+    }
+  }
+  &__table{
+    flex: 0 0 47.5%;
+    max-width: 47.5%;
+    padding: 20px 20px;
+    @media (max-width: $screen-xl){
+      flex: 0 0 100%;
+      max-width: 100%;
+      padding: 10px 10px 0;
+    }
+  }
+  &__short{
+    margin-bottom: 15px;
+    border-bottom: none;
+    @media (max-width: $screen-xl){
+      margin-bottom: 5px;
+      color: #666666;
+      font-size: 13px;
+    }
+  }
+  &__parameters{
+
+  }
+  &__line{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    border-bottom: 1px dotted #cfcfcf;
+  }
+  &__name{
+    background-color: #fff;
+    position: relative;
+    bottom: -5px;
+    padding-right: 5px;
+    z-index: 1;
+    @media (max-width: $screen-xl){
+      font-size: 12px;
+    }
+  }
+  &__value{
+    background-color: #fff;
+    position: relative;
+    bottom: -5px;
+    padding-left: 5px;
+    z-index: 1;
+    @media (max-width: $screen-xl){
+      font-size: 12px;
+    }
+    &--big{
+      font-size: 26px;
+      @media (max-width: $screen-xl){
+        font-size: 14px;
+      }
+    }
+  }
+  &__price{
+    margin: 20px -20px 25px;
+    padding: 15px 20px;
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+    @media (max-width: $screen-xl){
+      border: none;
+      margin: 0 0 10px;
+      padding: 15px 0;
+    }
+  }
+  &__summary{
+    @media (max-width: $screen-xl){
+      font-size: 12px;
+    }
+    span{
+      @include font-family('Lora Bold', normal, normal);
+    }
+  }
+  &__count{
+    display: inline-block;
+    margin-left: 5px;
+    &--plus{
+      @include sprite($s-item-plus);
+    }
+    &--minus{
+      @include sprite($s-item-minus);
+    }
+  }
+  .btn{
+    position: relative;
+    bottom: 2px;
+    padding: 7px 35px;
+    margin: 0 5px;
+    @media (max-width: $screen-xl){
+      font-size: 12px;
+      padding: 2px 10px;
+      bottom: 6px;
+    }
+  }
+
+  &__recipe{
+    flex: 0 0 52.5%;
+    max-width: 52.5%;
+    padding: 20px 30px;
+    border-right: 1px solid #e7e7e7;
+    @media (max-width: $screen-xl){
+      flex: 0 0 100%;
+      max-width: 100%;
+      padding: 10px 10px 0;
+      border-right: none;
+    }
+  }
+  &__brand{
+    flex: 0 0 47.5%;
+    max-width: 47.5%; 
+    padding: 20px 20px; 
+    @media (max-width: $screen-xl){
+      flex: 0 0 100%;
+      max-width: 100%;      
+      order: -1;
+      padding: 10px 10px;
+    }
+  }
+}
+
+.catalogue-item-recipe{
+  &__title{
+    color: #666666;
+    font-size: 21px;
+    line-height: (24/21);
+    margin: 10px 0;
+    @include font-family('Lora Bold', normal, normal);
+    @media (max-width: $screen-xl){
+      text-align: center;
+      font-size: 14px;
+      line-height: (24/14);
+      color: #333333;
+    }
+  }
+  &__text{
+    h2, h3{
+      font-size: 15px;
+      line-height: (24/15);
+      margin: 10px 0 5px;
+      @include font-family('Lora Bold', normal, normal);
+      @media (max-width: $screen-xl){
+        font-size: 13px;
+      }
+    }
+    p{
+      font-size: 13px;
+      line-height: (20/13);
+      margin: 5px 0;
+      @media (max-width: $screen-xl){
+        font-size: 11px;
+      }
+    }
+  }
+}
+
+.catalogue-item-decoration{
+  padding: 0 5px;
+  &__title{
+    font-size: 17px;
+    line-height: (24/17);
+    margin: 10px 0 10px;
+    @include font-family('Lora Bold', normal, normal);
+    @media (max-width: $screen-xl){
+      text-align: center;
+      margin: 0 0 10px;
+      font-size: 14px;
+    }
+  }
+  &__choose{
+    margin-bottom: 15px;
+    @media (max-width: $screen-xl){
+      font-size: 13px;
+      line-height: (18/13);
+    }
+  }
+  &__select{
+    display: block;
+    width: 100%;
+    background-color: #f3f3f3;
+    padding: 10px 10px;
+    border: 1px solid #acacac;     
+    color: #616161;
+    margin: 10px 0 0;
+    @media (max-width: $screen-xl){
+      font-size: 14px;
+      line-height: (28/14);
+      padding: 5px 5px;
+    }
+  }
+}
+
+.catalogue-item-brand{
+  padding: 10px 5px 0;
+  &__title{
+    font-size: 16px;
+    line-height: (24/16);
+    margin: 10px 0 10px;
+    @include font-family('Lora Bold', normal, normal);
+    @media (max-width: $screen-xl){
+      text-align: center;
+      margin: 0 0 10px;
+      font-size: 14px;
+    }
+  }
+  &__choose{
+    margin-bottom: 15px;
+    @media (max-width: $screen-xl){
+      font-size: 12px;
+      line-height: (18/12);
+    }
+  }
+  &__text{
+    @media (max-width: $screen-xl){
+      font-size: 13px;
+      @include font-family('Lora Bold', normal, normal);
+    }
+  }
+  &__label{
+    display: block;
+    margin-bottom: 7px;
+  }
+  &__description{
+    margin-top: 20px;
+    color: #999999;
+    font-size: 13px;
+    line-height: (20/13);
+    @media (max-width: $screen-xl){
+      font-size: 12px;
+    }
+    p{
+      margin: 0;
+    }
+  }
+}
+

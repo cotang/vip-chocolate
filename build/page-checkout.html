@@ -191,103 +191,119 @@
               <span>1 товар на сумму </span>573,75 р.</div>
           </div>
         </div>
+        <!-- Content-->
+        <section class="content">
+          <h1 class="content__title">Оформление заказа</h1>
+        </section>
         <!-- Checkout-->
         <section class="checkout">
-          <div class="checkout__sidebar">
-            <div class="checkout-basket">
-              <h2 class="checkout-basket__title">В вашей корзине</h2>
-              <div class="checkout-basket-item">
-                <div class="checkout-basket-item__img">
-                  <img src="img/checkout-basket-item1.jpg" alt="checkout-basket-item1">
-                </div>
-                <div class="checkout-basket-item__text-wrapper">
-                  <h3 class="checkout-basket-item__title">Шоколадный набор к 8 марта</h3>
-                  <div class="checkout-basket-item__price">Сумма 200р.</div>
-                  <div class="checkout-basket-item__amount">Кол-во: 2 шт.
-                    <a class="checkout-basket-item__count checkout-basket-item__count--plus" title="Добавить единицу товара"></a>
-                    <a class="checkout-basket-item__count checkout-basket-item__count--minus" title="Убрать единицу товара"></a>
+          <div class="checkout__inner">
+            <div class="checkout__main">
+              <div class="checkout-form">
+                <form class="checkout-form__form" action="" method="">
+                  <label class="checkout-form__label">
+                    <span class="checkout-form__title">Укажите ваше имя и фамилию:</span>
+                    <input class="checkout-form__input" type="text" name="Имя" placeholder="Полное имя и фамилия" />
+                  </label>
+                  <label class="checkout-form__label">
+                    <span class="checkout-form__title">Укажите контактный телефон:</span>
+                    <input class="checkout-form__input" type="tel" name="Телефон" placeholder="+7 (XXX) XXX-XX-XX" />
+                  </label>
+                  <label class="checkout-form__label">
+                    <span class="checkout-form__title">Укажите адрес электронной почты:</span>
+                    <input class="checkout-form__input" type="email" name="Email" placeholder="Электронная почта" />
+                  </label>
+                  <div class="checkout-form__item">
+                    <div class="checkout-form__title">Выберите ваш статус:</div>
+                    <label class="checkout-form__label">
+                      <input class="checkout-form__radio" type="radio" name="Статус заказчика" value="Физическое лицо" id="form-individual" />
+                      <span class="checkout-form__text">Физическое лицо</span>
+                    </label>
+                    <label class="checkout-form__label">
+                      <input class="checkout-form__radio" type="radio" name="Статус заказчика" value="Юридическое лицо" id="form-company" />
+                      <span class="checkout-form__text">Юридическое лицо</span>
+                    </label>
                   </div>
-                </div>
-                <a class="checkout-basket-item__close" title="Убрать товар из корзины"></a>
-              </div>
-              <div class="checkout-basket-item">
-                <div class="checkout-basket-item__img">
-                  <img src="img/checkout-basket-item2.jpg" alt="checkout-basket-item2">
-                </div>
-                <div class="checkout-basket-item__text-wrapper">
-                  <h3 class="checkout-basket-item__title">Бонбоньерка свадебная</h3>
-                  <div class="checkout-basket-item__price">Сумма 300р.</div>
-                  <div class="checkout-basket-item__amount">Кол-во: 3 шт.
-                    <a class="checkout-basket-item__count checkout-basket-item__count--plus" title="Добавить единицу товара"></a>
-                    <a class="checkout-basket-item__count checkout-basket-item__count--minus" title="Убрать единицу товара"></a>
+                  <label class="checkout-form__label">
+                    <span class="checkout-form__title">Укажите наименование компании</span>
+                    <input class="checkout-form__input" type="text" name="Юр.лицо" placeholder="Наименование юридического лица" />
+                  </label>
+                  <label class="checkout-form__label">
+                    <span class="checkout-form__title">Укажите Ваш адрес для
+                      <a href="#">курьерской доставки:</a>
+                    </span>
+                    <textarea class="checkout-form__textarea" name="Адрес доставки" placeholder="Ваш город, улица, дом, квартира (офис)"></textarea>
+                  </label>
+                  <div class="checkout-form__item">
+                    <div class="checkout-form__title">Выберите способ оплаты:</div>
+                    <label class="checkout-form__label">
+                      <input class="checkout-form__radio" type="radio" name="Способ оплаты" value="Выставить счет для оплаты" />
+                      <span class="checkout-form__text">Выставить счет для оплаты</span>
+                    </label>
+                    <label class="checkout-form__label">
+                      <input class="checkout-form__radio" type="radio" name="Способ оплаты" value="Оплата на банковскую карту" />
+                      <span class="checkout-form__text">Оплата на банковскую карту</span>
+                    </label>
+                    <label class="checkout-form__label">
+                      <input class="checkout-form__radio" type="radio" name="Способ оплаты" value="Оплатить онлайн" />
+                      <span class="checkout-form__text">Оплатить онлайн</span>
+                    </label>
+                    <label class="checkout-form__label">
+                      <input class="checkout-form__radio" type="radio" name="Способ оплаты" value="Оплата наличными " />
+                      <span class="checkout-form__text">Оплата наличными </span>
+                    </label>
                   </div>
-                </div>
-                <a class="checkout-basket-item__close" title="Убрать товар из корзины"></a>
-              </div>
-              <div class="checkout-basket__summary">
-                <h2 class="checkout-basket__title">Итого:</h2>
-                <div class="checkout-basket__text">Вы выбрали 2 наименования шоколада в количестве 5 шт. на сумму 500 руб.</div>
+                  <div class="checkout-form__line">При оформлении заказа — 100% предоплата.</div>
+                  <div class="checkout-form__btn">
+                    <button class="btn" type="submit">Отправить заявку </button>
+                  </div>
+                </form>
               </div>
             </div>
-          </div>
-          <div class="checkout__main">
-            <div class="checkout-form">
-              <form class="checkout-form__form" action="" method="">
-                <label class="checkout-form__label">
-                  <span class="checkout-form__title">Укажите ваше имя и фамилию:</span>
-                  <input class="checkout-form__input" type="text" name="Имя" placeholder="Полное имя и фамилия" />
-                </label>
-                <label class="checkout-form__label">
-                  <span class="checkout-form__title">Укажите контактный телефон:</span>
-                  <input class="checkout-form__input" type="tel" name="Телефон" placeholder="+7 (XXX) XXX-XX-XX" />
-                </label>
-                <label class="checkout-form__label">
-                  <span class="checkout-form__title">Укажите адрес электронной почты:</span>
-                  <input class="checkout-form__input" type="email" name="Email" placeholder="Электронная почта" />
-                </label>
-                <div class="checkout-form__item">
-                  <div class="checkout-form__title">Выберите ваш статус:</div>
-                  <label class="checkout-form__label">
-                    <input class="checkout-form__input" type="radio" name="Статус заказчика" value="Физическое лицо" id="form-individual" />
-                    <span class="checkout-form__text">Физическое лицо</span>
-                  </label>
-                  <label class="checkout-form__label">
-                    <input class="checkout-form__input" type="radio" name="Статус заказчика" value="Юридическое лицо" id="form-company" />
-                    <span class="checkout-form__text">Юридическое лицо</span>
-                  </label>
+            <div class="checkout__sidebar">
+              <div class="checkout-basket">
+                <h2 class="checkout-basket__title">В вашей корзине</h2>
+                <div class="checkout-basket__items">
+                  <div class="checkout-basket-item">
+                    <div class="checkout-basket-item__img">
+                      <img src="img/services.png" alt="checkout-basket-item1">
+                    </div>
+                    <div class="checkout-basket-item__text-wrapper">
+                      <h3 class="checkout-basket-item__title">Шоколадный набор к 8 марта</h3>
+                      <div class="checkout-basket-item__price">
+                        <span>Сумма: </span>200р.</div>
+                      <div class="checkout-basket-item__amount">
+                        <span>Кол-во: </span>2 шт.
+                        <a class="checkout-basket-item__count checkout-basket-item__count--plus" title="Добавить единицу товара"></a>
+                        <a class="checkout-basket-item__count checkout-basket-item__count--minus" title="Убрать единицу товара"></a>
+                      </div>
+                    </div>
+                    <a class="checkout-basket-item__close" title="Убрать товар из корзины"></a>
+                  </div>
+                  <div class="checkout-basket-item">
+                    <div class="checkout-basket-item__img">
+                      <img src="img/services.png" alt="checkout-basket-item2">
+                    </div>
+                    <div class="checkout-basket-item__text-wrapper">
+                      <h3 class="checkout-basket-item__title">Бонбоньерка свадебная</h3>
+                      <div class="checkout-basket-item__price">
+                        <span>Сумма: </span>200р.</div>
+                      <div class="checkout-basket-item__amount">
+                        <span>Кол-во: </span>2 шт.
+                        <a class="checkout-basket-item__count checkout-basket-item__count--plus" title="Добавить единицу товара"></a>
+                        <a class="checkout-basket-item__count checkout-basket-item__count--minus" title="Убрать единицу товара"></a>
+                      </div>
+                    </div>
+                  </div>
+                  <a class="checkout-basket__close" title="Убрать товар из корзины"></a>
                 </div>
-                <label class="checkout-form__label">
-                  <span class="checkout-form__title">Укажите наименование компании</span>
-                  <input class="checkout-form__input" type="text" name="Юр.лицо" placeholder="Наименование юридического лица" />
-                </label>
-                <label class="checkout-form__label">
-                  <span class="checkout-form__title">Укажите Ваш адрес для
-                    <a href="#">курьерской доставки:</a>
-                  </span>
-                  <textarea class="checkout-form__textarea" name="Адрес доставки" placeholder="Ваш город, улица, дом, квартира (офис)"></textarea>
-                </label>
-                <div class="checkout-form__item">
-                  <div class="checkout-form__title">Выберите способ оплаты:</div>
-                  <label class="checkout-form__label">
-                    <input class="checkout-form__input" type="radio" name="Способ оплаты" value="Выставить счет для оплаты" />
-                    <span class="checkout-form__text">Выставить счет для оплаты</span>
-                  </label>
-                  <label class="checkout-form__label">
-                    <input class="checkout-form__input" type="radio" name="Способ оплаты" value="Оплата на банковскую карту" />
-                    <span class="checkout-form__text">Оплата на банковскую карту</span>
-                  </label>
-                  <label class="checkout-form__label">
-                    <input class="checkout-form__input" type="radio" name="Способ оплаты" value="Оплатить онлайн" />
-                    <span class="checkout-form__text">Оплатить онлайн</span>
-                  </label>
-                  <label class="checkout-form__label">
-                    <input class="checkout-form__input" type="radio" name="Способ оплаты" value="Оплата наличными " />
-                    <span class="checkout-form__text">Оплата наличными </span>
-                  </label>
+                <div class="checkout-basket__summary">
+                  <h2 class="checkout-basket__summary-title">Итого:</h2>
+                  <div class="checkout-basket__summary-text">Вы выбрали 2 наименования шоколада в количестве
+                    <span>5 шт. на сумму 500 руб.</span>
+                  </div>
                 </div>
-                <div class="checkout-form__line">При оформлении заказа — 100% предоплата.</div>
-                <button class="btn" type="submit">Отправить заявку </button>
-              </form>
+              </div>
             </div>
           </div>
         </section>
@@ -420,7 +436,9 @@
               <span>4 шт. на сумму 660 руб.</span>
             </li>
           </ul>
-          <a class="btn" href="#">Оформить заказ</a>
+          <div class="order__btn">
+            <a class="btn" href="#">Оформить заказ</a>
+          </div>
         </section>
         <!-- Order similar goods-->
         <section class="order-similar-goods">
@@ -428,37 +446,49 @@
             <span>С этим товаром также смотрят также</span>
           </h2>
           <div class="order-similar-goods__gallery">
-            <div class="goods-item">
-              <div class="goods-item__img">
-                <img src="img/cat1.png" alt="Ассорти 8 марта">
+            <div class="order-similar-goods__item">
+              <div class="goods-item">
+                <div class="goods-item__img">
+                  <img src="img/goods-item.png" alt="Ассорти 8 марта">
+                </div>
+                <h3 class="goods-item__title">Ассорти 8 марта</h3>
+                <div class="goods-item__price">
+                  <span>Цена: </span>120 рублей</div>
+                <a class="goods-item__add" href="#">Добавить в корзину</a>
               </div>
-              <h3 class="goods-item__title">Ассорти 8 марта</h3>
-              <div class="goods-item__price">Цена 120 рублей</div>
-              <a class="goods-item__add" href="#">Добавить в корзину</a>
             </div>
-            <div class="goods-item">
-              <div class="goods-item__img">
-                <img src="img/cat2.png" alt="Визитка 8 марта">
+            <div class="order-similar-goods__item">
+              <div class="goods-item">
+                <div class="goods-item__img">
+                  <img src="img/goods-item.png" alt="Визитка 8 марта">
+                </div>
+                <h3 class="goods-item__title">Визитка 8 марта</h3>
+                <div class="goods-item__price">
+                  <span>Цена: </span>200 рублей</div>
+                <a class="goods-item__add" href="#">Добавить в корзину</a>
               </div>
-              <h3 class="goods-item__title">Визитка 8 марта</h3>
-              <div class="goods-item__price">Цена 200 рублей</div>
-              <a class="goods-item__add" href="#">Добавить в корзину</a>
             </div>
-            <div class="goods-item category-item category-item--new">
-              <div class="goods-item__img">
-                <img src="img/cat3.png" alt="Деревянная шкатулка 8 марта">
+            <div class="order-similar-goods__item">
+              <div class="goods-item">
+                <div class="goods-item__img">
+                  <img src="img/goods-item.png" alt="Ассорти 8 марта">
+                </div>
+                <h3 class="goods-item__title">Ассорти 8 марта</h3>
+                <div class="goods-item__price">
+                  <span>Цена: </span>200 рублей</div>
+                <a class="goods-item__add" href="#">Добавить в корзину</a>
               </div>
-              <h3 class="goods-item__title">Деревянная шкатулка 8 марта</h3>
-              <div class="goods-item__price">Цена 200 рублей</div>
-              <a class="goods-item__add" href="#">Добавить в корзину</a>
             </div>
-            <div class="goods-item">
-              <div class="goods-item__img">
-                <img src="img/cat4.png" alt="Шкатулка 8 марта">
+            <div class="order-similar-goods__item">
+              <div class="goods-item">
+                <div class="goods-item__img">
+                  <img src="img/goods-item.png" alt="Визитка 8 марта">
+                </div>
+                <h3 class="goods-item__title">Визитка 8 марта</h3>
+                <div class="goods-item__price">
+                  <span>Цена: </span>200 рублей</div>
+                <a class="goods-item__add" href="#">Добавить в корзину</a>
               </div>
-              <h3 class="goods-item__title">Шкатулка 8 марта</h3>
-              <div class="goods-item__price">Цена 200 рублей</div>
-              <a class="goods-item__add" href="#">Добавить в корзину</a>
             </div>
           </div>
         </section>

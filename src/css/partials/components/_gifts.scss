@@ -3,7 +3,7 @@
   margin-top: 35px;
   margin-bottom: 45px;
   @media (max-width: $screen-xl){
-    margin-top: 15px;
+    margin-top: 25px;
     margin-bottom: 25px;
   }
 
@@ -34,7 +34,7 @@
       top: 16px;
     }
     &:after{
-      bottom: 13px;
+      bottom: 14px;
     }
     span{
       position: relative;
@@ -55,7 +55,7 @@
     flex-wrap: wrap;
     margin: 20px 40px 0;
     @media (max-width: $screen-xl){
-      margin: 20px 10px 0;
+      margin: 10px 10px 0;
     }
   }
   &__item{
@@ -64,7 +64,7 @@
     @media (max-width: $screen-xl){
       flex: 0 0 50%;
       max-width: 50%;
-      padding: 0 10px;
+      padding: 0 20px;
     }
     &:before{
       content: '';
@@ -107,7 +107,7 @@
     @media (max-width: $screen-xl){
       font-size: 11px;
       line-height: (14/11);
-      margin: 0 -10px;
+      margin: 0 -20px;
     }
   }
 }

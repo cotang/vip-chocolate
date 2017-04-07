@@ -2899,10 +2899,7 @@ jQuery(document).ready(function($){
     $(this).closest('.language').find('.language__dropdown').toggle();   
   });
   $('.language__dropdown .language__link').click(function(e){
-    e.preventDefault();
-    // var langClass = $(this).attr('class');
-    // var langText = $(this).html();
-    // $(this).closest('.language').find('.language__active .language__link').removeClass().addClass(langClass).html(langText);    
+    e.preventDefault(); 
     $(this).closest('.language__dropdown').hide(); 
     return false;
   });
@@ -2980,28 +2977,88 @@ jQuery(document).ready(function($){
   // }
 
 
+  $('.faq__link').click(function(e) { 
+      e.preventDefault();
+      $(this).next('.faq__text').slideToggle();
+  });
+
+  $('.category-sorting__sort').click(function(e) { 
+      e.preventDefault();
+      $(this).next('.category-sorting__list').toggle();
+      $(this).toggleClass('category-sorting__sort--active');
+  });
+  $('.category-sorting__item a').click(function(e) { 
+      e.preventDefault();
+      $(this).closest('.category-sorting__list').hide();
+      $(this).closest('.category-sorting__type').find('.category-sorting__sort').text($(this).text());
+      $(this).closest('.category-sorting__type').find('.category-sorting__sort').removeClass('category-sorting__sort--active');
+  });
+
+  if ($(window).width() < 940) {
+    $('.page--contacts').find('.contacts__img').appendTo('.contacts');
+    $('.page--contacts').find('.contacts__tel').appendTo('.contacts__inner');
+  }
+
+    // Photogallery
+   $('.photogallery__main-gallery').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    asNavFor: '.photogallery__thumb-gallery',
+    arrows: true,
+    prevArrow: '<button type="button" class="slick-prev">Предыдущее</button>',
+    nextArrow: '<button type="button" class="slick-next">Следующее</button>',
+    dots: false,
+    centerMode: true,
+    centerPadding: '0'
+  });
+  $('.photogallery__thumb-gallery').slick({
+    slidesToShow: 8,
+    slidesToScroll: 1,
+    asNavFor: '.photogallery__main-gallery',
+    arrows: true,
+    dots: false,
+    centerMode: true,
+    focusOnSelect: true,
+    centerPadding: '0',
+    responsive: [
+      {
+        breakpoint: 940,
+        settings: {
+          slidesToShow: 4,
+        }
+      }
+    ]
+  });
+
+  /* галерея "item" */
+  $('.catalogue-item__gallery').slick({
+    dots: false,
+    arrows: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    centerMode: true,
+    centerPadding: '0' 
+  });
+
+
+  /* Basket in modal window */
+  $('.basket, .catalogue-item .btn').click( function(e){
+    e.preventDefault();
+    $('body').css({'overflow':'hidden'});   
+    $('.overlay').show();
+  });
+  /* Close modal window */
+  $('.overlay__bg, .overlay__close').click( function(e){ 
+    e.preventDefault();
+    $('body').css({'overflow':'auto'});
+    $(this).closest('.overlay').fadeOut(400);
+  });
 
 
 
-  /* Hamburger main nav */
-  // $('.main-hamburger').click(function(e) { 
-  //     e.preventDefault();
-  //     if ($(window).width() < 768) {
-  //       $('.search__input').hide();
-  //     }
-  //     $(this).closest('.nav').find('.nav__list').toggle();
-  // });
 
 
 
-  // if ($(window).width() < 768) {
-  //   $('#head__search input[type="search"]').focus(function(e) { 
-  //       $(this).closest('.header').find('.header__slogan').css('visibility', 'hidden');
-  //   });
-  //   $('#head__search input[type="search"]').blur(function(e) { 
-  //       $(this).closest('.header').find('.header__slogan').css('visibility', 'visible');
-  //   });
-  // }
 
 
   // $(window).resize(function(){
@@ -3015,28 +3072,6 @@ jQuery(document).ready(function($){
   //     $('.nav__list').hide();
   //   }
   // });
-
-  // /* Categories sub-list */
-  // $('.categories__link').click(function(e) { 
-  //     e.preventDefault();
-  //     $(this).siblings('.sub-categories').slideToggle();
-  // });
-
-  // /* Hamburger categories */
-  // $('.cat-hamburger').click(function(e) { 
-  //     e.preventDefault();
-  //     $(this).siblings('.categories__list').slideToggle();
-  // });
-
-  // /* плавный скролл наверх */
-  // $('.up').click(function () {
-  //   $("html, body").animate({
-  //     scrollTop: 0
-  //   }, 600);
-  //   return false;
-  // });
-
-   
 
   /* 404 - sticky footer */
   // var footerHeight = $('.footer').outerHeight();

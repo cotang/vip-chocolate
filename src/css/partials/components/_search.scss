@@ -1,0 +1,104 @@
+.search{
+  margin: 0 90px;
+  padding-top: 15px;
+  @media (max-width: $screen-xl){
+    margin: 0 25px;
+    padding-top: 0;
+  }
+}
+
+.search-form{
+
+  &__label{
+    position: relative;
+    &:after{
+      content: '';
+      display: block;
+      position: absolute;
+      top: 50%;
+      right: 5px;
+      transform: translateY(-50%);
+      @include sprite($s-icon-page-search);  
+      @media (max-width: $screen-xl){
+        transform: translateY(-50%) scale(0.8);
+      }  
+    }
+  }
+  &__input{
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #bb9f7a;
+    font-size: 17px;
+    line-height: 1;
+    @media (max-width: $screen-xl){
+      font-size: 14px;
+      padding: 7px 10px;
+    }
+  }
+}
+
+
+.search-results{
+  &__title{
+    padding: 25px 15px 15px;
+    margin: 0;
+    font-size: 16px;
+    @include font-family('Lora Regular', normal, normal);
+    @media (max-width: $screen-xl){
+      font-size: 12px;
+      padding: 15px 0 10px;
+    }
+  }
+  &__list{
+    margin: 0 0 15px;
+    padding-left: 30px;
+    color: #999999;
+    font-size: 16px;
+    @media (max-width: $screen-xl){
+      padding-left: 15px;
+      font-size: 13px;
+    }
+  }
+  &__item{
+    padding: 10px 7px;
+    position: relative;
+    @media (max-width: $screen-xl){
+      padding: 5px 5px;
+    }
+
+    &:hover{
+      background-color: #fff3dd;
+      &:before{
+        content: '';
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        right: 100%;
+        height: 100%;
+        width: 30px;
+        background-color: #fff3dd;
+      }
+      .search-results__heading{
+        color: #8d6d42;
+      }
+    }
+
+  }
+  &__heading{
+    color: #333333;
+    @include font-family('Lora Bold', normal, normal);
+    margin: 0;
+    font-size: 16px;
+    @media (max-width: $screen-xl){
+      font-size: 13px;
+    }
+  }
+  &__link{
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    color: #907e65;
+    @media (max-width: $screen-xl){
+      font-size: 10px;
+    }
+  }
+}

@@ -1,0 +1,223 @@
+.photogallery{
+  margin: 30px 75px 20px;
+  padding: 20px 20px 5px;
+  position: relative;
+  @media (max-width: $screen-xl){
+    margin: 0 25px 0;
+    padding: 15px 5px 15px;
+  }
+
+  &:before{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    pointer-events: none;
+    top: 15px;
+    left: 15px;
+    width: calc(100% - 30px);
+    height: calc(100% - 30px);
+    background-color: #fff;
+  }
+  &:after{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-width: 20px 20px;
+    border-color: transparent;
+    border-style: solid;
+    border-image: url(../img/border-corners-white.png) 20 20 stretch;
+    @media (max-width: $screen-xl){
+      border-width: 15px 15px;
+    }
+  }
+
+  &__heading{
+    text-align: center;
+    border-bottom: 1px solid #e3e3e3;
+    padding: 0 0 15px;
+    margin: 0 -20px;
+    @media (max-width: $screen-xl){
+      font-size: 14px;
+      border-bottom: none;
+    }
+  }
+  &__main-gallery{
+    margin: 20px -20px 0;
+    padding: 0 20px;
+    border-bottom: 1px solid #e3e3e3;
+    position: relative;
+    @media (max-width: $screen-xl){
+      margin-top: 0;
+    }    
+    .slick-arrow{
+      padding: 0;
+      position: absolute;
+      top: -55px;
+      z-index: 1;
+      color: #666666;
+      background-color: transparent;
+      border: none;
+      outline: none;
+      transition: none;
+      &:hover{
+        color: #816037;
+      }      
+      @media (max-width: $screen-xl){
+        color: transparent;
+        top: -37px;
+      }      
+    }
+    .slick-prev{
+      left: 20px;
+      @media (max-width: $screen-xl){
+        left: 25px;
+      } 
+      &:before{
+        content: ''; 
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 10px;       
+        @include sprite($s-photogallery-arrow);
+        transform: rotate(180deg);
+      }
+      &:hover{
+        &:before{
+          @include sprite($s-photogallery-arrow-hover);
+        }
+      }
+    }
+    .slick-next{      
+      right: 20px;
+      @media (max-width: $screen-xl){
+        right: 25px;
+      } 
+      &:after{
+        content: '';
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 10px;   
+        @include sprite($s-photogallery-arrow);
+      }
+      &:hover{
+        &:after{
+          @include sprite($s-photogallery-arrow-hover);
+        }
+      }
+    }
+  }
+  // &__main-img{
+  // }
+  &__img{
+    width: 755px;
+    height: 535px;
+    @media (max-width: $screen-xl){
+      height: 176px;
+      width: 100%;
+    } 
+    img{
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+    }
+  }
+  &__text{
+    text-align: center;
+    padding: 15px 0;
+    @media (max-width: $screen-xl){
+      font-size: 12px;
+      padding: 10px 0;
+    }   
+  }
+
+  &__thumb-gallery{
+    margin: 15px -4px 0;
+    position: relative;
+    .slick-arrow{
+      padding: 0;
+      position: absolute;
+      bottom: 40px;
+      z-index: 1;
+      color: transparent;
+      background-color: transparent;
+      border: none;
+      outline: none;
+
+      // @media (max-width: $screen-xl){
+      //   display: none;
+      // }      
+    }
+    .slick-prev{
+      position: absolute;
+      left: 3px;
+      bottom: 0;
+      width: 85px;
+      height: 85px;
+      background-color: rgba(0,0,0,.5);
+      @media (max-width: $screen-xl){
+        width: 55px;
+        height: 55px;
+      } 
+      &:after{
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        @include sprite($s-promo-arrow);
+        transform: rotate(180deg) translate(50%, 50%);
+      }
+    }
+    .slick-next{      
+      position: absolute;
+      right: 3px;
+      bottom: 0;
+      width: 85px;
+      height: 85px;
+      background-color: rgba(0,0,0,.5);
+      @media (max-width: $screen-xl){
+        width: 55px;
+        height: 55px;
+      } 
+      &:after{
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        @include sprite($s-promo-arrow);
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+  &__thumb-img{
+    width: 85px;
+    height: 85px;
+    padding: 0 3px;
+    @media (max-width: $screen-xl){
+      width: 55px;
+      height: 55px;
+    } 
+    img{
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+    }
+  }
+  &__link{
+    display: block;
+    text-align: center;
+    color: #999999;
+    font-size: 14px;
+    line-height: (24/14);
+    padding: 10px 0;
+    @media (max-width: $screen-xl){
+      font-size: 11px;
+      padding-bottom: 0;
+    }
+  }
+}

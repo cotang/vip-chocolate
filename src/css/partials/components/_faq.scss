@@ -1,0 +1,90 @@
+.faq{
+  @media (max-width: $screen-xl){
+    margin: 0 -20px;
+  }
+
+  &__title{
+    color: #333;
+    @include font-family('Lora Bold', normal, normal);
+    font-size: 18px;
+    line-height: (22/18);
+    margin: 20px 0 25px;
+    @media (max-width: $screen-xl){
+      text-align: center;
+      color: #b5a282;
+      font-size: 13px;
+      margin: 10px 0 10px;
+    }
+  }
+  &__list{
+    padding-left: 0;
+    margin: 0;
+    list-style-type: none;
+    border: 1px solid #d2b993;
+    background-color: #ebdbbe;
+    letter-spacing: -0.025em;
+    @media (max-width: $screen-xl){
+      border: none;
+      letter-spacing: normal;
+      font-size: 13px;
+      line-height: (18/13);
+    }
+  }
+  &__item{
+    &:first-of-type{
+      .faq__link{
+        border-top: none;
+      }
+    }
+    &:last-of-type{
+      .faq__text{
+        border-top: none;
+      }
+    }
+  }
+  &__link{
+    display: block;
+    width: 100%;
+    padding: 7px 20px 7px 10px;
+    border-top: 1px solid #fff;
+    position: relative;   
+    &:hover{
+      background-color: #b49975;
+      background-image: linear-gradient( 180deg, rgb(159,134,101) 0%, rgb(187,159,122) 100%);
+      color: #fff;
+      &:after{
+        border-top: 5px solid #fff;
+      }
+    }
+    &:after{
+      content: '';
+      height: 0;
+      width: 0;
+      border: 5px solid transparent;
+      border-top: 5px solid #b0a48e;
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      transform: translateY(-2px);
+      @media (max-width: $screen-xl){
+        right: 5px;
+      }
+    }
+  }
+  &__text{
+    padding: 7px 20px;
+    border-top: 1px solid #d2b993;
+    display: none;
+  }
+  &__link-contact{
+    display: block;
+    margin-top: 30px;
+    font-size: 14px;
+    line-height: (22/14);
+    @media (max-width: $screen-xl){
+      font-size: 12px;
+      margin-top: 10px;
+      text-align: center;
+    }
+  }
+}

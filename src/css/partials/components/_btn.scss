@@ -11,9 +11,10 @@
   padding: 10px 20px;
   margin: 0;
   outline: none;
-  // &:hover, &:focus, &:active{
-  //   text-decoration: none;
-  // }
+  @media (max-width: $screen-xl){
+    font-size: 14px;
+    padding: 7px 18px;
+  }
 
   &--blue{
     color: rgb(103, 116, 129);

@@ -1,9 +1,11 @@
 .main{
-  padding-top: 20px;
-  padding-bottom: 20px;
+  position: relative;
+  padding-top: 15px;
+  // padding-bottom: 100px;
+  padding-bottom: 150px;
   @media (max-width: $screen-xl){
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 12px;
+    padding-bottom: 100px;
   }
 }
 .page{
@@ -21,10 +23,10 @@
     left: 0;
     width: 100%;
     height: 100%;
-    border-width: 200px 100px;
+    border-width: 140px 50px;
     border-color: $sand;
     border-style: solid;
-    border-image: url(../img/main-bg.png) 200 100 round stretch;
+    border-image: url(../img/main-bg.png) 140 50 round stretch;
     @media (max-width: $screen-xl){
       border-width: 125px 50px;
       border-image: url(../img/main-bg-300.png) 125 50 round stretch;
@@ -34,10 +36,10 @@
     content: '';
     position: absolute;
     z-index: -2;
-    left: 100px;
-    width: calc(100% - 200px);
-    top: 200px;
-    height: calc(100% - 400px);
+    left: 50px;
+    width: calc(100% - 100px);
+    top: 140px;
+    height: calc(100% - 280px);
     background-color: $sand;
     background-image: url(../img/main-bg-color.png);
     background-repeat: repeat;
@@ -51,7 +53,7 @@
 
 
 
-  &--brand, &--corporate-clients, &--guarantee, &--recommendations-single, &--services-single {
+  &--brand, &--corporate-clients, &--guarantee, &--recommendations-single, &--services-single, &--faq {
     .content__img{
       padding: 30px 20px 20px;
       position: relative;
@@ -86,6 +88,107 @@
     .content__img{
       @media (max-width: $screen-xl){
         margin: 0 20px;
+      }
+    }
+  }
+
+  &--search{
+    .pagination{
+      margin-left: 20px;
+      @media (max-width: $screen-xl){
+        margin-left: 0;
+      }
+    }
+  }
+
+  &--contacts{
+    .contacts{
+      margin: 20px 90px 20px;
+      border-image: none;
+      &:before, &:after{
+        display: none;
+      }
+      @media (max-width: $screen-xl){
+        margin: 10px 20px 10px;
+      }
+      &__title{
+        @include font-family('Lora Bold', normal, normal);
+        font-size: 25px;
+        margin: 10px 0 25px;
+        @media (max-width: $screen-xl){
+          color: #5b4c39;
+          font-size: 14px;
+          text-align: center;
+          margin: 10px 0 10px;
+        }        
+      }
+      &__inner{
+        display: block;
+        margin: 0;
+        @media (max-width: $screen-xl){
+          font-size: 13px;
+        }
+      }
+      &__img{
+        float: right;
+        @media (max-width: $screen-xl){
+          float: none;
+        }
+      }
+      &__text{
+        max-width: 100%;        
+      }
+      &__promo{
+        span{
+          padding: 0 20px;
+          @include font-family('Lora Regular', normal, normal);
+        }        
+      }
+      &__tel{
+        margin-top: 20px;
+        max-width: 100%;
+        > span {
+          color: #333333;
+          @include font-family('Lora Bold', normal, normal);
+          display: block;
+        }
+      }
+      &__link{
+        display: inline-block;
+        vertical-align: text-bottom;       
+
+        &--viber{
+          margin-left: 10px;
+          @include sprite($s-icon-viber-transparent);
+          @media (max-width: $screen-xl){
+            display: none;
+          }
+        }
+        &--whatsapp{
+          margin-left: 10px;
+          @include sprite($s-icon-whatsapp-transparent);
+          @media (max-width: $screen-xl){
+            display: none;
+          }
+        }
+      }
+      &__email{
+        >span{
+          color: #333333;
+          @include font-family('Lora Bold', normal, normal);
+          @media (max-width: $screen-xl){
+            font-size: 13px;
+          }          
+        }
+        > a{
+          margin-top: 5px;
+          display: block;
+          font-size: 28px;
+          height: (36/28);
+          @media (max-width: $screen-xl){
+            font-size: 13px;
+          }
+        }
       }
     }
   }

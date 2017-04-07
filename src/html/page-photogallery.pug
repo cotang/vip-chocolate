@@ -28,34 +28,43 @@ block content
 
       // Photogallery
       +b.SECTION.photogallery
-        +e.head Вы смотрите: 3 из 25 фото
+        +e.heading Вы смотрите: 3 из 25 фото
         +e.main-gallery
           +e.main-img
-            img(src="img/photogallery/photo1.jpg", alt="photogallery1-image")
+            +e.img
+              img(src="img/photogallery/photo1.jpg", alt="photogallery1-image")
             +e.text Шоколадный набор «Ассорти 8 Марта!» (1 шоколадная плитка и 9 конфет)
           +e.main-img
-            img(src="img/photogallery/photo2.jpg", alt="photogallery2-image")
+            +e.img
+              img(src="img/photogallery/photo2.jpg", alt="photogallery2-image")
             +e.text Шоколадный набор «Ассорти 8 Марта!» (1 шоколадная плитка и 9 конфет)
           +e.main-img
-            img(src="img/photogallery/photo3.jpg", alt="photogallery3-image")
+            +e.img
+              img(src="img/photogallery/photo3.jpg", alt="photogallery3-image")
             +e.text Шоколадный набор «Ассорти 8 Марта!» (1 шоколадная плитка и 9 конфет)
           +e.main-img
-            img(src="img/photogallery/photo4.jpg", alt="photogallery4-image")
+            +e.img
+              img(src="img/photogallery/photo4.jpg", alt="photogallery4-image")
             +e.text Шоколадный набор «Ассорти 8 Марта!» (1 шоколадная плитка и 9 конфет)
           +e.main-img
-            img(src="img/photogallery/photo5.jpg", alt="photogallery5-image")
+            +e.img
+              img(src="img/photogallery/photo5.jpg", alt="photogallery5-image")
             +e.text Шоколадный набор «Ассорти 8 Марта!» (1 шоколадная плитка и 9 конфет)
           +e.main-img
-            img(src="img/photogallery/photo6.jpg", alt="photogallery6-image")
+            +e.img
+              img(src="img/photogallery/photo6.jpg", alt="photogallery6-image")
             +e.text Шоколадный набор «Ассорти 8 Марта!» (1 шоколадная плитка и 9 конфет)
           +e.main-img
-            img(src="img/photogallery/photo7.jpg", alt="photogallery7-image")
+            +e.img
+              img(src="img/photogallery/photo7.jpg", alt="photogallery7-image")
             +e.text Шоколадный набор «Ассорти 8 Марта!» (1 шоколадная плитка и 9 конфет)
           +e.main-img
-            img(src="img/photogallery/photo8.jpg", alt="photogallery8-image")
+            +e.img
+              img(src="img/photogallery/photo8.jpg", alt="photogallery8-image")
             +e.text Шоколадный набор «Ассорти 8 Марта!» (1 шоколадная плитка и 9 конфет)
           +e.main-img
-            img(src="img/photogallery/photo9.jpg", alt="photogallery9-image")
+            +e.img
+              img(src="img/photogallery/photo9.jpg", alt="photogallery9-image")
             +e.text Шоколадный набор «Ассорти 8 Марта!» (1 шоколадная плитка и 9 конфет)
 
         +e.thumb-gallery
@@ -81,4 +90,5 @@ block content
 
       // Gifts
       include partials/components/_gifts.pug 
-
+      // Copyright
+      include partials/components/_copyright.pug 

@@ -26,23 +26,23 @@ block content
           img(src="img/contacts.png", alt="contacts")
         +e.H1.title Контакты In chocolate veritas
         +e.inner
-          +e.text 
-            +e.promo
-              span Магазин элитного шоколада In chocolate veritas:
-            | мы принимаем заказы на корпоративные подарки из коллекции новогоднего шоколада.
-            +e.email 
-              span Эл. почта для заказов: 
-              a(href="mailto:info@vip-chocolate.ru") info@vip-chocolate.ru
+          +e.promo
+            span Магазин элитного шоколада In chocolate veritas:
+          | мы принимаем заказы на корпоративные подарки из коллекции новогоднего шоколада.
           +e.tel 
             span Телефон для связи: 
-            a(href="tel:+78129423023") +7 (812) 
+            +e.A.link--tel(href="tel:+78129423023") +7 (812) 
               span 942-30-23
+            +e.A.link--whatsapp(href="tel:+78129423023", title="Позвонить по whatsapp")
+            +e.A.link--viber(href="viber://+78129423023", title="Позвонить по viber")
+          +e.email 
+            span Электронная почта для Ваших заявок: 
+            a(href="mailto:info@vip-chocolate.ru") info@vip-chocolate.ru
+
 
       // Contacts form
-      +b.SECTION.checkout-form
-        +e.img
-          img(src="img/contacts-form.png", alt="contacts-form")
-        +e.FORM(action='', method='')
+      +b.SECTION.contacts-form
+        +e.FORM.form(action='', method='')
           +e.LABEL.label
             +e.INPUT.input(type='text', name='Имя', placeholder="Укажите ваше имя и фамилию")
           +e.LABEL.label
@@ -53,9 +53,14 @@ block content
             +e.INPUT.input(type='text', name='Тема письма', placeholder="Тема письма")
           +e.LABEL.label
             +e.TEXTAREA.textarea(name='Ваш комментарий', placeholder="Ваш комментарий")
-          +e.line Проверьте внимательно: все ли поля заполнены — это необходимо для отправки письма.
+          +e.captcha
+            img(src='img/captcha.png' alt='captcha')
+        +e.img
+          img(src="img/contacts-form.png", alt="contacts-form")
+        +e.line Проверьте внимательно: все ли поля заполнены — это необходимо для отправки письма.
+        +e.btn
           +b.BUTTON.btn(type='submit') Отправить заявку 
 
-
-
+      // Copyright
+      include partials/components/_copyright.pug 
 
