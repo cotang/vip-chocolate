@@ -460,6 +460,8 @@ th {
   ==========
   Provides setting font-face to page
 
+  Author: Igor Timohin (timohin.i@gmail.com)
+
  - *$font-family:* The font family of the font.
  - *$font-group:* The font family group, e.g. roboto, dinpro, ptsans.
  - *$font-style:* The  part of path to font file, NOT the font-style
@@ -491,19 +493,23 @@ th {
 */
 @font-face {
   font-family: "Lora Regular";
-  src: url("../fonts/Lora/Lora Regular/Lora-regular-webfont.woff2") format("woff2"), url("../fonts/Lora/Lora Regular/Lora-regular-webfont.woff") format("woff"); }
+  src: url("../fonts/Lora/Lora Regular/Lora-regular-webfont.eot"), local("Lora Regular");
+  src: url("../fonts/Lora/Lora Regular/Lora-regular-webfont.eot?#iefix") format("embedded-opentype"), local("Lora Regular"), url("../fonts/Lora/Lora Regular/Lora-regular-webfont.woff") format("woff"), url("../fonts/Lora/Lora Regular/Lora-regular-webfont.ttf") format("truetype"), url("../fonts/Lora/Lora Regular/Lora-regular-webfont.svg#Lora Regular") format("svg"); }
 
 @font-face {
   font-family: "Lora Bold";
-  src: url("../fonts/Lora/Lora Bold/Lora-bold-webfont.woff2") format("woff2"), url("../fonts/Lora/Lora Bold/Lora-bold-webfont.woff") format("woff"); }
+  src: url("../fonts/Lora/Lora Bold/Lora-bold-webfont.eot"), local("Lora Bold");
+  src: url("../fonts/Lora/Lora Bold/Lora-bold-webfont.eot?#iefix") format("embedded-opentype"), local("Lora Bold"), url("../fonts/Lora/Lora Bold/Lora-bold-webfont.woff") format("woff"), url("../fonts/Lora/Lora Bold/Lora-bold-webfont.ttf") format("truetype"), url("../fonts/Lora/Lora Bold/Lora-bold-webfont.svg#Lora Bold") format("svg"); }
 
 @font-face {
   font-family: "Lora Italic";
-  src: url("../fonts/Lora/Lora Italic/Lora-italic-webfont.woff2") format("woff2"), url("../fonts/Lora/Lora Italic/Lora-italic-webfont.woff") format("woff"); }
+  src: url("../fonts/Lora/Lora Italic/Lora-italic-webfont.eot"), local("Lora Italic");
+  src: url("../fonts/Lora/Lora Italic/Lora-italic-webfont.eot?#iefix") format("embedded-opentype"), local("Lora Italic"), url("../fonts/Lora/Lora Italic/Lora-italic-webfont.woff") format("woff"), url("../fonts/Lora/Lora Italic/Lora-italic-webfont.ttf") format("truetype"), url("../fonts/Lora/Lora Italic/Lora-italic-webfont.svg#Lora Italic") format("svg"); }
 
 @font-face {
   font-family: "Lora Bold Italic";
-  src: url("../fonts/Lora/Lora Bold Italic/Lora-bolditalic-webfont.woff2") format("woff2"), url("../fonts/Lora/Lora Bold Italic/Lora-bolditalic-webfont.woff") format("woff"); }
+  src: url("../fonts/Lora/Lora Bold Italic/Lora-bolditalic-webfont.eot"), local("Lora Bold Italic");
+  src: url("../fonts/Lora/Lora Bold Italic/Lora-bolditalic-webfont.eot?#iefix") format("embedded-opentype"), local("Lora Bold Italic"), url("../fonts/Lora/Lora Bold Italic/Lora-bolditalic-webfont.woff") format("woff"), url("../fonts/Lora/Lora Bold Italic/Lora-bolditalic-webfont.ttf") format("truetype"), url("../fonts/Lora/Lora Bold Italic/Lora-bolditalic-webfont.svg#Lora Bold Italic") format("svg"); }
 
 *,
 *:before,
@@ -522,7 +528,7 @@ body {
   background-repeat: repeat;
   background-size: cover;
   color: #333333;
-  font-family: "Lora Regular", sans-serif;
+  font-family: "Lora Regular", Arial, sans-serif;
   font-weight: normal;
   font-style: normal;
   font-size: 16px;
@@ -559,14 +565,14 @@ img {
     right: 0;
     text-align: right; }
   .header__shipping {
-    font-family: "Lora Bold", sans-serif;
+    font-family: "Lora Bold", Arial, sans-serif;
     font-weight: normal;
     font-style: normal;
     font-size: 14px; }
   .header__tel {
     font-size: 21px; }
     .header__tel span {
-      font-family: "Lora Bold", sans-serif;
+      font-family: "Lora Bold", Arial, sans-serif;
       font-weight: normal;
       font-style: normal; }
   .header__social {
@@ -660,7 +666,7 @@ img {
     padding-left: 0;
     font-size: 17px;
     text-shadow: 0px 1px 1px #eddabc;
-    font-family: "Lora Bold", sans-serif;
+    font-family: "Lora Bold", Arial, sans-serif;
     font-weight: normal;
     font-style: normal; }
   .nav__item {
@@ -714,7 +720,7 @@ img {
     background-color: #dec9ab;
     border: 1px solid #bb9f7a;
     box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.5);
-    font-family: "Lora Regular", sans-serif;
+    font-family: "Lora Regular", Arial, sans-serif;
     font-weight: normal;
     font-style: normal; }
     .nav__sublist--catalogue {
@@ -743,7 +749,7 @@ img {
 .main-hamburger {
   text-transform: uppercase;
   font-size: 14px;
-  font-family: "Lora Bold", sans-serif;
+  font-family: "Lora Bold", Arial, sans-serif;
   font-weight: normal;
   font-style: normal; }
   .main-hamburger:before {
@@ -759,7 +765,7 @@ img {
   position: absolute;
   bottom: -5px;
   right: 100%;
-  font-family: "Lora Regular", sans-serif;
+  font-family: "Lora Regular", Arial, sans-serif;
   font-weight: normal;
   font-style: normal; }
   .nav-search__input {
@@ -771,7 +777,7 @@ img {
   display: inline-block;
   text-align: center;
   text-shadow: 0px 1px 1px white;
-  font-family: "Lora Regular", sans-serif;
+  font-family: "Lora Regular", Arial, sans-serif;
   font-weight: normal;
   font-style: normal;
   font-size: 16px;
@@ -845,7 +851,7 @@ img {
     .page--contacts .contacts:before, .page--contacts .contacts:after {
       display: none; }
     .page--contacts .contacts__title {
-      font-family: "Lora Bold", sans-serif;
+      font-family: "Lora Bold", Arial, sans-serif;
       font-weight: normal;
       font-style: normal;
       font-size: 25px;
@@ -859,7 +865,7 @@ img {
       max-width: 100%; }
     .page--contacts .contacts__promo span {
       padding: 0 20px;
-      font-family: "Lora Regular", sans-serif;
+      font-family: "Lora Regular", Arial, sans-serif;
       font-weight: normal;
       font-style: normal; }
     .page--contacts .contacts__tel {
@@ -867,7 +873,7 @@ img {
       max-width: 100%; }
       .page--contacts .contacts__tel > span {
         color: #333333;
-        font-family: "Lora Bold", sans-serif;
+        font-family: "Lora Bold", Arial, sans-serif;
         font-weight: normal;
         font-style: normal;
         display: block; }
@@ -888,7 +894,7 @@ img {
         height: 25px; }
     .page--contacts .contacts__email > span {
       color: #333333;
-      font-family: "Lora Bold", sans-serif;
+      font-family: "Lora Bold", Arial, sans-serif;
       font-weight: normal;
       font-style: normal; }
     .page--contacts .contacts__email > a {
@@ -953,7 +959,7 @@ img {
   .basket__summary {
     margin-left: 20px;
     padding: 5px;
-    font-family: "Lora Bold", sans-serif;
+    font-family: "Lora Bold", Arial, sans-serif;
     font-weight: normal;
     font-style: normal; }
 
@@ -980,7 +986,7 @@ img {
     font-size: 14px;
     line-height: 2.14286;
     margin: 0;
-    font-family: "Lora Regular", sans-serif;
+    font-family: "Lora Regular", Arial, sans-serif;
     font-weight: normal;
     font-style: normal; }
   .footer-catalogue__list {
@@ -1009,7 +1015,7 @@ img {
     font-size: 14px;
     line-height: 2.14286;
     margin: 0;
-    font-family: "Lora Regular", sans-serif;
+    font-family: "Lora Regular", Arial, sans-serif;
     font-weight: normal;
     font-style: normal; }
   .footer-nav__list {
@@ -1107,7 +1113,7 @@ img {
   position: relative; }
   .order__title {
     font-size: 24px;
-    font-family: "Lora Regular", sans-serif;
+    font-family: "Lora Regular", Arial, sans-serif;
     font-weight: normal;
     font-style: normal;
     margin: 0 0 10px; }
@@ -1123,14 +1129,14 @@ img {
     .order__item:before {
       content: '- '; }
     .order__item > span {
-      font-family: "Lora Bold", sans-serif;
+      font-family: "Lora Bold", Arial, sans-serif;
       font-weight: normal;
       font-style: normal; }
   .order__summary {
     margin-top: 20px;
     margin-left: 10px; }
     .order__summary > span {
-      font-family: "Lora Bold", sans-serif;
+      font-family: "Lora Bold", Arial, sans-serif;
       font-weight: normal;
       font-style: normal; }
   .order__btn {
@@ -1146,7 +1152,7 @@ img {
     margin: 10px 0 20px;
     text-align: center;
     position: relative;
-    font-family: "Lora Regular", sans-serif;
+    font-family: "Lora Regular", Arial, sans-serif;
     font-weight: normal;
     font-style: normal;
     font-size: 16px;
@@ -1204,7 +1210,7 @@ img {
   padding-top: 15px; }
   .content__title {
     margin: 10px 0 15px;
-    font-family: "Lora Bold", sans-serif;
+    font-family: "Lora Bold", Arial, sans-serif;
     font-weight: normal;
     font-style: normal;
     font-size: 25px; }
@@ -1234,11 +1240,11 @@ img {
   .content__text p {
     margin: 10px 0; }
   .content__text a {
-    font-family: "Lora Bold", sans-serif;
+    font-family: "Lora Bold", Arial, sans-serif;
     font-weight: normal;
     font-style: normal; }
   .content__text h2, .content__text h3, .content__text h4, .content__text h5, .content__text h6 {
-    font-family: "Lora Bold", sans-serif;
+    font-family: "Lora Bold", Arial, sans-serif;
     font-weight: normal;
     font-style: normal; }
   .content__text h2 {
@@ -1254,7 +1260,7 @@ img {
     display: block;
     padding: 10px 30px 0;
     text-align: center;
-    font-family: "Lora Bold", sans-serif;
+    font-family: "Lora Bold", Arial, sans-serif;
     font-weight: normal;
     font-style: normal;
     font-size: 15px;
@@ -1262,7 +1268,7 @@ img {
   .content__description {
     max-width: 65%; }
   .content__link-back {
-    font-family: "Lora Bold", sans-serif;
+    font-family: "Lora Bold", Arial, sans-serif;
     font-weight: normal;
     font-style: normal; }
 
@@ -1353,7 +1359,7 @@ img {
     line-height: normal; }
   .promo-slide__title {
     color: #628099;
-    font-family: "Lora Bold", sans-serif;
+    font-family: "Lora Bold", Arial, sans-serif;
     font-weight: normal;
     font-style: normal;
     font-size: 30px; }
@@ -1368,7 +1374,7 @@ img {
   .catalogue__title {
     margin: 0 65px 30px;
     position: relative;
-    font-family: "Lora Bold", sans-serif;
+    font-family: "Lora Bold", Arial, sans-serif;
     font-weight: normal;
     font-style: normal;
     font-size: 25px;
@@ -1483,7 +1489,7 @@ img {
     margin-top: 15px;
     font-size: 17px; }
     .catalogue-slide__text span {
-      font-family: "Lora Bold", sans-serif;
+      font-family: "Lora Bold", Arial, sans-serif;
       font-weight: normal;
       font-style: normal; }
 
@@ -1592,7 +1598,7 @@ img {
     border-top: 1px solid #e7e7e7;
     border-bottom: 1px solid #e7e7e7; }
   .catalogue-item__summary span {
-    font-family: "Lora Bold", sans-serif;
+    font-family: "Lora Bold", Arial, sans-serif;
     font-weight: normal;
     font-style: normal; }
   .catalogue-item__count {
@@ -1632,7 +1638,7 @@ img {
   font-size: 21px;
   line-height: 1.14286;
   margin: 10px 0;
-  font-family: "Lora Bold", sans-serif;
+  font-family: "Lora Bold", Arial, sans-serif;
   font-weight: normal;
   font-style: normal; }
 
@@ -1640,7 +1646,7 @@ img {
   font-size: 15px;
   line-height: 1.6;
   margin: 10px 0 5px;
-  font-family: "Lora Bold", sans-serif;
+  font-family: "Lora Bold", Arial, sans-serif;
   font-weight: normal;
   font-style: normal; }
 
@@ -1655,7 +1661,7 @@ img {
     font-size: 17px;
     line-height: 1.41176;
     margin: 10px 0 10px;
-    font-family: "Lora Bold", sans-serif;
+    font-family: "Lora Bold", Arial, sans-serif;
     font-weight: normal;
     font-style: normal; }
   .catalogue-item-decoration__choose {
@@ -1675,7 +1681,7 @@ img {
     font-size: 16px;
     line-height: 1.5;
     margin: 10px 0 10px;
-    font-family: "Lora Bold", sans-serif;
+    font-family: "Lora Bold", Arial, sans-serif;
     font-weight: normal;
     font-style: normal; }
   .catalogue-item-brand__choose {
@@ -1697,7 +1703,7 @@ img {
   .calendar-section__title {
     margin: 0 65px 10px;
     position: relative;
-    font-family: "Lora Bold", sans-serif;
+    font-family: "Lora Bold", Arial, sans-serif;
     font-weight: normal;
     font-style: normal;
     font-size: 25px;
@@ -1813,7 +1819,7 @@ img {
     width: 100%;
     border-collapse: separate;
     font-size: 15px;
-    font-family: "Lora Bold", sans-serif;
+    font-family: "Lora Bold", Arial, sans-serif;
     font-weight: normal;
     font-style: normal; }
     .calendar__month th, .calendar__month td {
@@ -1865,7 +1871,7 @@ img {
     background-color: #f4e6cc;
     box-shadow: 2px 2px 0 0 rgba(0, 0, 0, 0.1); }
   .event-popup__date {
-    font-family: "Lora Regular", sans-serif;
+    font-family: "Lora Regular", Arial, sans-serif;
     font-weight: normal;
     font-style: normal; }
   .event-popup__title {
@@ -1878,7 +1884,7 @@ img {
   .gifts__title {
     margin: 0 65px 10px;
     position: relative;
-    font-family: "Lora Bold", sans-serif;
+    font-family: "Lora Bold", Arial, sans-serif;
     font-weight: normal;
     font-style: normal;
     font-size: 25px;
@@ -1933,7 +1939,7 @@ img {
   .gifts__text {
     font-size: 16px;
     line-height: 1.375;
-    font-family: "Lora Bold", sans-serif;
+    font-family: "Lora Bold", Arial, sans-serif;
     font-weight: normal;
     font-style: normal; }
 
@@ -1956,7 +1962,7 @@ img {
   float: right; }
 
 .about-section__title {
-  font-family: "Lora Bold", sans-serif;
+  font-family: "Lora Bold", Arial, sans-serif;
   font-weight: normal;
   font-style: normal;
   margin: 10px 0 10px;
@@ -1969,7 +1975,7 @@ img {
 
 .about-section__link {
   color: #846828;
-  font-family: "Lora Regular", sans-serif;
+  font-family: "Lora Regular", Arial, sans-serif;
   font-weight: normal;
   font-style: normal;
   font-size: 14px;
@@ -1983,7 +1989,7 @@ img {
   .clients-section__title {
     margin: 0 65px 10px;
     position: relative;
-    font-family: "Lora Bold", sans-serif;
+    font-family: "Lora Bold", Arial, sans-serif;
     font-weight: normal;
     font-style: normal;
     font-size: 25px;
@@ -2163,7 +2169,7 @@ img {
       border-style: solid;
       border-image: url(../img/border-corners.png) 20 20 stretch; }
   .brand-examples__title {
-    font-family: "Lora Bold", sans-serif;
+    font-family: "Lora Bold", Arial, sans-serif;
     font-weight: normal;
     font-style: normal;
     font-size: 16px;
@@ -2204,7 +2210,7 @@ img {
     max-width: 65%;
     padding-right: 20px; }
   .contacts__promo span {
-    font-family: "Lora Bold", sans-serif;
+    font-family: "Lora Bold", Arial, sans-serif;
     font-weight: normal;
     font-style: normal; }
   .contacts__email {
@@ -2222,7 +2228,7 @@ img {
       height: 34px;
       display: none; }
     .contacts__email > a {
-      font-family: "Lora Bold", sans-serif;
+      font-family: "Lora Bold", Arial, sans-serif;
       font-weight: normal;
       font-style: normal; }
   .contacts__tel {
@@ -2248,7 +2254,7 @@ img {
     margin: 5px 0;
     font-size: 30px; }
     .contacts__link--tel > span {
-      font-family: "Lora Bold", sans-serif;
+      font-family: "Lora Bold", Arial, sans-serif;
       font-weight: normal;
       font-style: normal; }
 
@@ -2305,7 +2311,7 @@ img {
     margin-bottom: 10px; }
   .contacts-form__title {
     display: block;
-    font-family: "Lora Bold", sans-serif;
+    font-family: "Lora Bold", Arial, sans-serif;
     font-weight: normal;
     font-style: normal;
     margin: 20px 0 10px; }
@@ -2405,7 +2411,7 @@ img {
   .recommendations-item__title {
     font-size: 16px;
     line-height: 1.375;
-    font-family: "Lora Bold", sans-serif;
+    font-family: "Lora Bold", Arial, sans-serif;
     font-weight: normal;
     font-style: normal;
     margin: 10px 0 0; }
@@ -2450,7 +2456,7 @@ img {
 .pagination__list {
   margin: 0;
   padding: 0 10px 0 25px;
-  font-family: "Lora Bold", sans-serif;
+  font-family: "Lora Bold", Arial, sans-serif;
   font-weight: normal;
   font-style: normal; }
 
@@ -2523,7 +2529,7 @@ img {
     text-align: center;
     font-size: 17px;
     line-height: 1.29412;
-    font-family: "Lora Bold", sans-serif;
+    font-family: "Lora Bold", Arial, sans-serif;
     font-weight: normal;
     font-style: normal;
     margin: 15px 0 0; }
@@ -2532,7 +2538,7 @@ img {
 
 .faq__title {
   color: #333;
-  font-family: "Lora Bold", sans-serif;
+  font-family: "Lora Bold", Arial, sans-serif;
   font-weight: normal;
   font-style: normal;
   font-size: 18px;
@@ -2620,7 +2626,7 @@ img {
   padding: 25px 15px 15px;
   margin: 0;
   font-size: 16px;
-  font-family: "Lora Regular", sans-serif;
+  font-family: "Lora Regular", Arial, sans-serif;
   font-weight: normal;
   font-style: normal; }
 
@@ -2649,7 +2655,7 @@ img {
 
 .search-results__heading {
   color: #333333;
-  font-family: "Lora Bold", sans-serif;
+  font-family: "Lora Bold", Arial, sans-serif;
   font-weight: normal;
   font-style: normal;
   margin: 0;
@@ -2665,7 +2671,7 @@ img {
   padding-top: 15px; }
   .category__title {
     margin: 30px 30px 10px;
-    font-family: "Lora Bold", sans-serif;
+    font-family: "Lora Bold", Arial, sans-serif;
     font-weight: normal;
     font-style: normal;
     font-size: 25px; }
@@ -2762,7 +2768,7 @@ img {
     text-transform: uppercase;
     font-size: 14px;
     line-height: 1.57143;
-    font-family: "Lora Bold", sans-serif;
+    font-family: "Lora Bold", Arial, sans-serif;
     font-weight: normal;
     font-style: normal;
     margin: 10px 15px 0; }
@@ -2772,7 +2778,7 @@ img {
   .goods-item__price {
     margin: 0 15px;
     color: #333;
-    font-family: "Lora Bold", sans-serif;
+    font-family: "Lora Bold", Arial, sans-serif;
     font-weight: normal;
     font-style: normal;
     font-size: 15px;
@@ -2801,7 +2807,7 @@ img {
   color: #4d3e2b; }
   .category-sorting__type {
     margin: 0 15px;
-    font-family: "Lora Bold", sans-serif;
+    font-family: "Lora Bold", Arial, sans-serif;
     font-weight: normal;
     font-style: normal;
     position: relative; }
@@ -2886,7 +2892,7 @@ img {
     margin-bottom: 10px; }
   .checkout-form__title {
     display: block;
-    font-family: "Lora Bold", sans-serif;
+    font-family: "Lora Bold", Arial, sans-serif;
     font-weight: normal;
     font-style: normal;
     margin: 20px 0 10px; }
@@ -2937,7 +2943,7 @@ img {
     border-image: url(../img/border-corners.png) 20 20 stretch; }
   .checkout-basket__title {
     display: block;
-    font-family: "Lora Bold", sans-serif;
+    font-family: "Lora Bold", Arial, sans-serif;
     font-weight: normal;
     font-style: normal;
     margin: 0;
@@ -2948,7 +2954,7 @@ img {
     margin: 0 -25px;
     padding: 0 25px; }
   .checkout-basket__summary-title {
-    font-family: "Lora Bold", sans-serif;
+    font-family: "Lora Bold", Arial, sans-serif;
     font-weight: normal;
     font-style: normal;
     font-size: 16px;
@@ -2960,7 +2966,7 @@ img {
     font-size: 16px;
     line-height: 1.125; }
     .checkout-basket__summary-text span {
-      font-family: "Lora Bold", sans-serif;
+      font-family: "Lora Bold", Arial, sans-serif;
       font-weight: normal;
       font-style: normal; }
 
@@ -2979,7 +2985,7 @@ img {
       display: block; }
   .checkout-basket-item__title {
     color: #544633;
-    font-family: "Lora Regular", sans-serif;
+    font-family: "Lora Regular", Arial, sans-serif;
     font-weight: normal;
     font-style: normal;
     font-size: 15px;
@@ -3185,6 +3191,19 @@ img {
     font-size: 14px;
     line-height: 1.71429;
     padding: 10px 0; }
+  @media screen and (-webkit-min-device-pixel-ratio: 0){
+  @font-face{
+    font-family: "Lora Regular";
+    src: url("../fonts/Lora/Lora Regular/Lora-regular-webfont.svg#Lora Regular") format("svg"); }
+  @font-face{
+    font-family: "Lora Bold";
+    src: url("../fonts/Lora/Lora Bold/Lora-bold-webfont.svg#Lora Bold") format("svg"); }
+  @font-face{
+    font-family: "Lora Italic";
+    src: url("../fonts/Lora/Lora Italic/Lora-italic-webfont.svg#Lora Italic") format("svg"); }
+  @font-face{
+    font-family: "Lora Bold Italic";
+    src: url("../fonts/Lora/Lora Bold Italic/Lora-bolditalic-webfont.svg#Lora Bold Italic") format("svg"); } }
   @media (max-width: 960px){
   .header{
     margin-bottom: 10px; }
@@ -3562,7 +3581,7 @@ img {
     font-size: 12px;
     margin: 0 -5px; }
   .catalogue-slide__text span{
-    font-family: "Lora Regular", sans-serif;
+    font-family: "Lora Regular", Arial, sans-serif;
     font-weight: normal;
     font-style: normal; }
   .catalogue-item__bg{
@@ -3658,7 +3677,7 @@ img {
     line-height: 1.5; }
   .catalogue-item-brand__text{
     font-size: 13px;
-    font-family: "Lora Bold", sans-serif;
+    font-family: "Lora Bold", Arial, sans-serif;
     font-weight: normal;
     font-style: normal; }
   .catalogue-item-brand__description{
