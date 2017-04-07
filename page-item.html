@@ -215,86 +215,108 @@
                 </div>
               </div>
               <div class="catalogue-item__table">
-                <div class="catalogue-item__line catalogue-item__line--short">Кратко о товаре:</div>
-                <div class="catalogue-item__line">
-                  <div class="catalogue-item__name">Артикул</div>
-                  <div class="catalogue-item__value">030020</div>
+                <div class="catalogue-item__short">Кратко о товаре:</div>
+                <div class="catalogue-item__parameters">
+                  <div class="catalogue-item__line">
+                    <div class="catalogue-item__name">Артикул</div>
+                    <div class="catalogue-item__value">030020</div>
+                  </div>
+                  <div class="catalogue-item__line">
+                    <div class="catalogue-item__name">Вес</div>
+                    <div class="catalogue-item__value">230 гр</div>
+                  </div>
+                  <div class="catalogue-item__line">
+                    <div class="catalogue-item__name">Размер</div>
+                    <div class="catalogue-item__value">150х150 мм</div>
+                  </div>
+                  <div class="catalogue-item__line">
+                    <div class="catalogue-item__name">Размер шоколада</div>
+                    <div class="catalogue-item__value">120х120 мм</div>
+                  </div>
                 </div>
-                <div class="catalogue-item__line">
-                  <div class="catalogue-item__name">Вес</div>
-                  <div class="catalogue-item__value">230 гр</div>
+                <div class="catalogue-item__price">
+                  <div class="catalogue-item__line">
+                    <div class="catalogue-item__name">Цена за единицу</div>
+                    <div class="catalogue-item__value catalogue-item__value--big">1200 р.</div>
+                  </div>
                 </div>
-                <div class="catalogue-item__line">
-                  <div class="catalogue-item__name">Размер</div>
-                  <div class="catalogue-item__value">150х150 мм</div>
-                </div>
-                <div class="catalogue-item__line">
-                  <div class="catalogue-item__name">Размер шоколада</div>
-                  <div class="catalogue-item__value">120х120 мм</div>
-                </div>
-                <div class="catalogue-item__line catalogue-item__line--price">
-                  <div class="catalogue-item__name">Цена за единицу</div>
-                  <div class="catalogue-item__value catalogue-item__value--big">1200 р.</div>
-                </div>
-                <div class="catalogue-item__amount">Кол-во: 3 шт.
-                  <a class="catalogue-item__count catalogue-item__count--plus" title="Добавить единицу товара"></a>
+                <div class="catalogue-item__amount">
+                  <span class="catalogue-item__summary">Кол-во:
+                    <span>3 шт. </span>
+                  </span>
                   <a class="catalogue-item__count catalogue-item__count--minus" title="Убрать единицу товара"></a>
-                  <input class="btn" type="submit" />
+                  <a class="catalogue-item__count catalogue-item__count--plus" title="Добавить единицу товара"></a>
+                  <input class="btn" type="submit" value="В корзину" />
                 </div>
               </div>
             </div>
             <div class="catalogue-item__bg">
-              <div class="catalogue-item-recipe">
-                <h2 class="catalogue-item-recipe__title">Рецептура шоколада</h2>
-                <div class="catalogue-item-recipe__text">
-                  <h2>Тёмный шоколад 53,8%</h2>
-                  <p>Состав: какао тертое, сахар, какао-масло, лецитин, ваниль, кондитерский декор. Массовая доля общего сухого остатка какао не менее 53,1%. Пищевая ценность на 100 г продукта: белки – 5,0 г, жиры – 36,1 г, углеводы – 46,8 г. Энергетическая
-                    ценность на 100 г продукта – 535 ккал. Условия хранения: температура 18(+/-3)°С; относительная влажность воздуха не более 60%. Срок годности 6 месяцев при соблюдении условий хранения. </p>
-                  <p>ТУ 9125-001-71451551-2007. </p>
-                  <p>Произведено: ООО «Шоколад», РФ, 196105, Санкт-Петербург, ул. Благодатная, д. 71, лит. А. + 7 (812) 303 82 52</p>
-                  <h2>Молочный шоколад 33,6%</h2>
-                  <p>Состав: сахар, какао-масло, цельное сухое молоко, какао тертое, лецитин, ваниль, кондитерский декор. Массовая доля общего сухого остатка какао не менее 25%, массовая доля сухого обезжиренного остатка какао не менее 2,5%, массовая доля
-                    сухого обезжиренного остатка молока или молочных продуктов не менее 12%, массовая доля молочного жира не менее 2,5%. Пищевая ценность на 100 г продукта: белки–7,0 г, жиры–36,2 г, углеводы– 51,2 г. Энергетическая ценность на 100 г продукта
-                    – 560 ккал. Условия хранения: температура 18(+/-3)°С, относительная влажность воздуха не более 60%. Срок годности 6 месяцев при соблюдении условий хранения. </p>
-                  <p>ТУ 9125-001-71451551-2007. </p>
-                  <p>Произведено: ООО «Шоколад», РФ, 196105, Санкт-Петербург, ул. Благодатная, д. 71, лит. А. + 7 (812) 303 82 52</p>
+              <div class="catalogue-item__recipe">
+                <div class="catalogue-item-recipe">
+                  <h2 class="catalogue-item-recipe__title">Рецептура шоколада</h2>
+                  <div class="catalogue-item-recipe__text">
+                    <h2>Тёмный шоколад 53,8%</h2>
+                    <p>Состав: какао тертое, сахар, какао-масло, лецитин, ваниль, кондитерский декор. Массовая доля общего сухого остатка какао не менее 53,1%. Пищевая ценность на 100 г продукта: белки – 5,0 г, жиры – 36,1 г, углеводы – 46,8 г. Энергетическая
+                      ценность на 100 г продукта – 535 ккал. Условия хранения: температура 18(+/-3)°С; относительная влажность воздуха не более 60%. Срок годности 6 месяцев при соблюдении условий хранения. </p>
+                    <p>ТУ 9125-001-71451551-2007. </p>
+                    <p>Произведено: ООО «Шоколад», РФ, 196105, Санкт-Петербург, ул. Благодатная, д. 71, лит. А. + 7 (812) 303 82 52</p>
+                    <h2>Молочный шоколад 33,6%</h2>
+                    <p>Состав: сахар, какао-масло, цельное сухое молоко, какао тертое, лецитин, ваниль, кондитерский декор. Массовая доля общего сухого остатка какао не менее 25%, массовая доля сухого обезжиренного остатка какао не менее 2,5%, массовая доля
+                      сухого обезжиренного остатка молока или молочных продуктов не менее 12%, массовая доля молочного жира не менее 2,5%. Пищевая ценность на 100 г продукта: белки–7,0 г, жиры–36,2 г, углеводы– 51,2 г. Энергетическая ценность на 100 г
+                      продукта – 560 ккал. Условия хранения: температура 18(+/-3)°С, относительная влажность воздуха не более 60%. Срок годности 6 месяцев при соблюдении условий хранения. </p>
+                    <p>ТУ 9125-001-71451551-2007. </p>
+                    <p>Произведено: ООО «Шоколад», РФ, 196105, Санкт-Петербург, ул. Благодатная, д. 71, лит. А. + 7 (812) 303 82 52</p>
+                  </div>
                 </div>
               </div>
-              <div class="catalogue-item-decoration">
-                <h2 class="catalogue-item-decoration__title">Оформление шоколада</h2>
-                <p>Для оформления заказа вам нужно выбрать:</p>
-                <select class="catalogue-item-decoration__select">
-                  <option class="catalogue-item-decoration__option" name="Цвет упаковки шоколада" value="Цвет упаковки шоколада"></option>
-                  <option class="catalogue-item-decoration__option" name="Цвет упаковки шоколада" value="черный"></option>
-                  <option class="catalogue-item-decoration__option" name="Цвет упаковки шоколада" value="белый"></option>
-                  <option class="catalogue-item-decoration__option" name="Цвет упаковки шоколада" value="красный"></option>
-                </select>
-                <select class="catalogue-item-decoration__select">
-                  <option class="catalogue-item-decoration__option" name="Тип шоколада" value="Тип шоколада"></option>
-                  <option class="catalogue-item-decoration__option" name="Тип шоколада" value="черный молочный"></option>
-                  <option class="catalogue-item-decoration__option" name="Тип  шоколада" value="черный горький"></option>
-                  <option class="catalogue-item-decoration__option" name="Тип шоколада" value="белый"></option>
-                </select>
-              </div>
-              <div class="catalogue-item-brand">
-                <h2 class="catalogue-item-brand__title">Брендирование шоколадного подарка</h2>
-                <p>Для корпоративного подарка выберите актуальные позиции брендирования*:</p>
-                <label class="catalogue-item-brand__label">
-                  <input class="catalogue-item-brand__input" type="checkbox" name="Брендирование" value="Брендирование упаковки" />
-                  <span class="catalogue-item-brand__text">Брендирование упаковки</span>
-                </label>
-                <label class="catalogue-item-brand__label">
-                  <input class="catalogue-item-brand__input" type="checkbox" name="Брендирование" value="Брендирование шоколада" />
-                  <span class="catalogue-item-brand__text">Брендирование шоколада</span>
-                </label>
-              </div>
-              <div class="catalogue-item__description">
-                <p>Брендирование — это дополнительная услуга (по требованию заказчика).</p>
-                <p>Минимальная сумма заказа — 5 тыс.руб.</p>
-                <p>При оформлении бронированного шоколада строчка "минимальное количество 50 шт.</p>
+              <div class="catalogue-item__brand">
+                <div class="catalogue-item-decoration">
+                  <h2 class="catalogue-item-decoration__title">Оформление шоколада</h2>
+                  <div class="catalogue-item-decoration__choose">Для оформления заказа вам нужно выбрать:</div>
+                  <select class="catalogue-item-decoration__select" name="Цвет упаковки шоколада">
+                    <option class="catalogue-item-decoration__option" value="Цвет упаковки шоколада" disabled selected>Цвет упаковки шоколада</option>
+                    <option class="catalogue-item-decoration__option" value="черный">черный</option>
+                    <option class="catalogue-item-decoration__option" value="белый">белый</option>
+                    <option class="catalogue-item-decoration__option" value="красный">красный</option>
+                  </select>
+                  <select class="catalogue-item-decoration__select" name="Тип шоколада">
+                    <option class="catalogue-item-decoration__option" value="Тип шоколада" disabled selected>Тип шоколада</option>
+                    <option class="catalogue-item-decoration__option" value="черный молочный">черный молочный</option>
+                    <option class="catalogue-item-decoration__option" value="черный горький">черный горький</option>
+                    <option class="catalogue-item-decoration__option" value="белый">белый</option>
+                  </select>
+                </div>
+                <div class="catalogue-item-brand">
+                  <h2 class="catalogue-item-brand__title">Брендирование шоколадного подарка</h2>
+                  <div class="catalogue-item-brand__choose">Для корпоративного подарка выберите актуальные позиции брендирования*:</div>
+                  <label class="catalogue-item-brand__label">
+                    <input class="catalogue-item-brand__input" type="checkbox" name="Брендирование" value="Брендирование упаковки" />
+                    <span class="catalogue-item-brand__text">Брендирование упаковки</span>
+                  </label>
+                  <label class="catalogue-item-brand__label">
+                    <input class="catalogue-item-brand__input" type="checkbox" name="Брендирование" value="Брендирование шоколада" />
+                    <span class="catalogue-item-brand__text">Брендирование шоколада</span>
+                  </label>
+                  <label class="catalogue-item-brand__label">
+                    <input class="catalogue-item-brand__input" type="checkbox" name="Брендирование" value="Брендирование шоколада и упаковки" />
+                    <span class="catalogue-item-brand__text">Брендирование шоколада и упаковки</span>
+                  </label>
+                  <div class="catalogue-item-brand__description">
+                    <p>Брендирование — это дополнительная услуга (по требованию заказчика).</p>
+                    <p>Минимальная сумма заказа — 5 тыс.руб.</p>
+                    <p>При оформлении бронированного шоколада строчка "минимальное количество 50 шт.</p>
+                  </div>
+                </div>
               </div>
             </div>
           </form>
+        </section>
+        <!-- Copyright-->
+        <section class="copyright">
+          <div class="copyright__inner">
+            <div class="copyright__text">© 2009 ЗАО "Траверз". Элитный шоколад от производителя в Санкт-Петербурге, шоколад на заказ, элитный шоколад ручной работы, шоколадные подарки.</div>
+            <div class="copyright__developer">Разработка сайта — Inmotus Design</div>
+          </div>
         </section>
       </main>
     </div>
@@ -418,7 +440,9 @@
               <span>4 шт. на сумму 660 руб.</span>
             </li>
           </ul>
-          <a class="btn" href="#">Оформить заказ</a>
+          <div class="order__btn">
+            <a class="btn" href="#">Оформить заказ</a>
+          </div>
         </section>
         <!-- Order similar goods-->
         <section class="order-similar-goods">
@@ -426,37 +450,49 @@
             <span>С этим товаром также смотрят также</span>
           </h2>
           <div class="order-similar-goods__gallery">
-            <div class="goods-item">
-              <div class="goods-item__img">
-                <img src="img/cat1.png" alt="Ассорти 8 марта">
+            <div class="order-similar-goods__item">
+              <div class="goods-item">
+                <div class="goods-item__img">
+                  <img src="img/goods-item.png" alt="Ассорти 8 марта">
+                </div>
+                <h3 class="goods-item__title">Ассорти 8 марта</h3>
+                <div class="goods-item__price">
+                  <span>Цена: </span>120 рублей</div>
+                <a class="goods-item__add" href="#">Добавить в корзину</a>
               </div>
-              <h3 class="goods-item__title">Ассорти 8 марта</h3>
-              <div class="goods-item__price">Цена 120 рублей</div>
-              <a class="goods-item__add" href="#">Добавить в корзину</a>
             </div>
-            <div class="goods-item">
-              <div class="goods-item__img">
-                <img src="img/cat2.png" alt="Визитка 8 марта">
+            <div class="order-similar-goods__item">
+              <div class="goods-item">
+                <div class="goods-item__img">
+                  <img src="img/goods-item.png" alt="Визитка 8 марта">
+                </div>
+                <h3 class="goods-item__title">Визитка 8 марта</h3>
+                <div class="goods-item__price">
+                  <span>Цена: </span>200 рублей</div>
+                <a class="goods-item__add" href="#">Добавить в корзину</a>
               </div>
-              <h3 class="goods-item__title">Визитка 8 марта</h3>
-              <div class="goods-item__price">Цена 200 рублей</div>
-              <a class="goods-item__add" href="#">Добавить в корзину</a>
             </div>
-            <div class="goods-item category-item category-item--new">
-              <div class="goods-item__img">
-                <img src="img/cat3.png" alt="Деревянная шкатулка 8 марта">
+            <div class="order-similar-goods__item">
+              <div class="goods-item">
+                <div class="goods-item__img">
+                  <img src="img/goods-item.png" alt="Ассорти 8 марта">
+                </div>
+                <h3 class="goods-item__title">Ассорти 8 марта</h3>
+                <div class="goods-item__price">
+                  <span>Цена: </span>200 рублей</div>
+                <a class="goods-item__add" href="#">Добавить в корзину</a>
               </div>
-              <h3 class="goods-item__title">Деревянная шкатулка 8 марта</h3>
-              <div class="goods-item__price">Цена 200 рублей</div>
-              <a class="goods-item__add" href="#">Добавить в корзину</a>
             </div>
-            <div class="goods-item">
-              <div class="goods-item__img">
-                <img src="img/cat4.png" alt="Шкатулка 8 марта">
+            <div class="order-similar-goods__item">
+              <div class="goods-item">
+                <div class="goods-item__img">
+                  <img src="img/goods-item.png" alt="Визитка 8 марта">
+                </div>
+                <h3 class="goods-item__title">Визитка 8 марта</h3>
+                <div class="goods-item__price">
+                  <span>Цена: </span>200 рублей</div>
+                <a class="goods-item__add" href="#">Добавить в корзину</a>
               </div>
-              <h3 class="goods-item__title">Шкатулка 8 марта</h3>
-              <div class="goods-item__price">Цена 200 рублей</div>
-              <a class="goods-item__add" href="#">Добавить в корзину</a>
             </div>
           </div>
         </section>

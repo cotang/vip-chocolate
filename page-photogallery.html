@@ -197,42 +197,60 @@
         </section>
         <!-- Photogallery-->
         <section class="photogallery">
-          <div class="photogallery__head">Вы смотрите: 3 из 25 фото</div>
+          <div class="photogallery__heading">Вы смотрите: 3 из 25 фото</div>
           <div class="photogallery__main-gallery">
             <div class="photogallery__main-img">
-              <img src="img/photogallery/photo1.jpg" alt="photogallery1-image">
+              <div class="photogallery__img">
+                <img src="img/photogallery/photo1.jpg" alt="photogallery1-image">
+              </div>
               <div class="photogallery__text">Шоколадный набор «Ассорти 8 Марта!» (1 шоколадная плитка и 9 конфет)</div>
             </div>
             <div class="photogallery__main-img">
-              <img src="img/photogallery/photo2.jpg" alt="photogallery2-image">
+              <div class="photogallery__img">
+                <img src="img/photogallery/photo2.jpg" alt="photogallery2-image">
+              </div>
               <div class="photogallery__text">Шоколадный набор «Ассорти 8 Марта!» (1 шоколадная плитка и 9 конфет)</div>
             </div>
             <div class="photogallery__main-img">
-              <img src="img/photogallery/photo3.jpg" alt="photogallery3-image">
+              <div class="photogallery__img">
+                <img src="img/photogallery/photo3.jpg" alt="photogallery3-image">
+              </div>
               <div class="photogallery__text">Шоколадный набор «Ассорти 8 Марта!» (1 шоколадная плитка и 9 конфет)</div>
             </div>
             <div class="photogallery__main-img">
-              <img src="img/photogallery/photo4.jpg" alt="photogallery4-image">
+              <div class="photogallery__img">
+                <img src="img/photogallery/photo4.jpg" alt="photogallery4-image">
+              </div>
               <div class="photogallery__text">Шоколадный набор «Ассорти 8 Марта!» (1 шоколадная плитка и 9 конфет)</div>
             </div>
             <div class="photogallery__main-img">
-              <img src="img/photogallery/photo5.jpg" alt="photogallery5-image">
+              <div class="photogallery__img">
+                <img src="img/photogallery/photo5.jpg" alt="photogallery5-image">
+              </div>
               <div class="photogallery__text">Шоколадный набор «Ассорти 8 Марта!» (1 шоколадная плитка и 9 конфет)</div>
             </div>
             <div class="photogallery__main-img">
-              <img src="img/photogallery/photo6.jpg" alt="photogallery6-image">
+              <div class="photogallery__img">
+                <img src="img/photogallery/photo6.jpg" alt="photogallery6-image">
+              </div>
               <div class="photogallery__text">Шоколадный набор «Ассорти 8 Марта!» (1 шоколадная плитка и 9 конфет)</div>
             </div>
             <div class="photogallery__main-img">
-              <img src="img/photogallery/photo7.jpg" alt="photogallery7-image">
+              <div class="photogallery__img">
+                <img src="img/photogallery/photo7.jpg" alt="photogallery7-image">
+              </div>
               <div class="photogallery__text">Шоколадный набор «Ассорти 8 Марта!» (1 шоколадная плитка и 9 конфет)</div>
             </div>
             <div class="photogallery__main-img">
-              <img src="img/photogallery/photo8.jpg" alt="photogallery8-image">
+              <div class="photogallery__img">
+                <img src="img/photogallery/photo8.jpg" alt="photogallery8-image">
+              </div>
               <div class="photogallery__text">Шоколадный набор «Ассорти 8 Марта!» (1 шоколадная плитка и 9 конфет)</div>
             </div>
             <div class="photogallery__main-img">
-              <img src="img/photogallery/photo9.jpg" alt="photogallery9-image">
+              <div class="photogallery__img">
+                <img src="img/photogallery/photo9.jpg" alt="photogallery9-image">
+              </div>
               <div class="photogallery__text">Шоколадный набор «Ассорти 8 Марта!» (1 шоколадная плитка и 9 конфет)</div>
             </div>
           </div>
@@ -289,6 +307,13 @@
               <div class="gifts__text">Корпоративные
                 <br>подарки</div>
             </div>
+          </div>
+        </section>
+        <!-- Copyright-->
+        <section class="copyright">
+          <div class="copyright__inner">
+            <div class="copyright__text">© 2009 ЗАО "Траверз". Элитный шоколад от производителя в Санкт-Петербурге, шоколад на заказ, элитный шоколад ручной работы, шоколадные подарки.</div>
+            <div class="copyright__developer">Разработка сайта — Inmotus Design</div>
           </div>
         </section>
       </main>
@@ -413,7 +438,9 @@
               <span>4 шт. на сумму 660 руб.</span>
             </li>
           </ul>
-          <a class="btn" href="#">Оформить заказ</a>
+          <div class="order__btn">
+            <a class="btn" href="#">Оформить заказ</a>
+          </div>
         </section>
         <!-- Order similar goods-->
         <section class="order-similar-goods">
@@ -421,37 +448,49 @@
             <span>С этим товаром также смотрят также</span>
           </h2>
           <div class="order-similar-goods__gallery">
-            <div class="goods-item">
-              <div class="goods-item__img">
-                <img src="img/cat1.png" alt="Ассорти 8 марта">
+            <div class="order-similar-goods__item">
+              <div class="goods-item">
+                <div class="goods-item__img">
+                  <img src="img/goods-item.png" alt="Ассорти 8 марта">
+                </div>
+                <h3 class="goods-item__title">Ассорти 8 марта</h3>
+                <div class="goods-item__price">
+                  <span>Цена: </span>120 рублей</div>
+                <a class="goods-item__add" href="#">Добавить в корзину</a>
               </div>
-              <h3 class="goods-item__title">Ассорти 8 марта</h3>
-              <div class="goods-item__price">Цена 120 рублей</div>
-              <a class="goods-item__add" href="#">Добавить в корзину</a>
             </div>
-            <div class="goods-item">
-              <div class="goods-item__img">
-                <img src="img/cat2.png" alt="Визитка 8 марта">
+            <div class="order-similar-goods__item">
+              <div class="goods-item">
+                <div class="goods-item__img">
+                  <img src="img/goods-item.png" alt="Визитка 8 марта">
+                </div>
+                <h3 class="goods-item__title">Визитка 8 марта</h3>
+                <div class="goods-item__price">
+                  <span>Цена: </span>200 рублей</div>
+                <a class="goods-item__add" href="#">Добавить в корзину</a>
               </div>
-              <h3 class="goods-item__title">Визитка 8 марта</h3>
-              <div class="goods-item__price">Цена 200 рублей</div>
-              <a class="goods-item__add" href="#">Добавить в корзину</a>
             </div>
-            <div class="goods-item category-item category-item--new">
-              <div class="goods-item__img">
-                <img src="img/cat3.png" alt="Деревянная шкатулка 8 марта">
+            <div class="order-similar-goods__item">
+              <div class="goods-item">
+                <div class="goods-item__img">
+                  <img src="img/goods-item.png" alt="Ассорти 8 марта">
+                </div>
+                <h3 class="goods-item__title">Ассорти 8 марта</h3>
+                <div class="goods-item__price">
+                  <span>Цена: </span>200 рублей</div>
+                <a class="goods-item__add" href="#">Добавить в корзину</a>
               </div>
-              <h3 class="goods-item__title">Деревянная шкатулка 8 марта</h3>
-              <div class="goods-item__price">Цена 200 рублей</div>
-              <a class="goods-item__add" href="#">Добавить в корзину</a>
             </div>
-            <div class="goods-item">
-              <div class="goods-item__img">
-                <img src="img/cat4.png" alt="Шкатулка 8 марта">
+            <div class="order-similar-goods__item">
+              <div class="goods-item">
+                <div class="goods-item__img">
+                  <img src="img/goods-item.png" alt="Визитка 8 марта">
+                </div>
+                <h3 class="goods-item__title">Визитка 8 марта</h3>
+                <div class="goods-item__price">
+                  <span>Цена: </span>200 рублей</div>
+                <a class="goods-item__add" href="#">Добавить в корзину</a>
               </div>
-              <h3 class="goods-item__title">Шкатулка 8 марта</h3>
-              <div class="goods-item__price">Цена 200 рублей</div>
-              <a class="goods-item__add" href="#">Добавить в корзину</a>
             </div>
           </div>
         </section>
