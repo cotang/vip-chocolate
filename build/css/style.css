@@ -493,13 +493,13 @@ th {
 */
 @font-face {
   font-family: "Lora Regular";
-  src: url("../fonts/Lora/Lora-regular-webfont.eot"), local("Lora Regular");
-  src: url("../fonts/Lora/Lora-regular-webfont.eot?#iefix") format("embedded-opentype"), local("Lora Regular"), url("../fonts/Lora/Lora-regular-webfont.woff") format("woff"), url("../fonts/Lora/Lora-regular-webfont.ttf") format("truetype"), url("../fonts/Lora/Lora-regular-webfont.svg#Lora Regular") format("svg"); }
+  src: url("../fonts/Lora/lora-regular-webfont.eot"), local("Lora Regular");
+  src: url("../fonts/Lora/lora-regular-webfont.eot?#iefix") format("embedded-opentype"), local("Lora Regular"), url("../fonts/Lora/lora-regular-webfont.woff") format("woff"), url("../fonts/Lora/lora-regular-webfont.ttf") format("truetype"), url("../fonts/Lora/lora-regular-webfont.svg#Lora Regular") format("svg"); }
 
 @font-face {
   font-family: "Lora Bold";
-  src: url("../fonts/Lora/Lora-bold-webfont.eot"), local("Lora Bold");
-  src: url("../fonts/Lora/Lora-bold-webfont.eot?#iefix") format("embedded-opentype"), local("Lora Bold"), url("../fonts/Lora/Lora-bold-webfont.woff") format("woff"), url("../fonts/Lora/Lora-bold-webfont.ttf") format("truetype"), url("../fonts/Lora/Lora-bold-webfont.svg#Lora Bold") format("svg"); }
+  src: url("../fonts/Lora/lora-bold-webfont.eot"), local("Lora Bold");
+  src: url("../fonts/Lora/lora-bold-webfont.eot?#iefix") format("embedded-opentype"), local("Lora Bold"), url("../fonts/Lora/lora-bold-webfont.woff") format("woff"), url("../fonts/Lora/lora-bold-webfont.ttf") format("truetype"), url("../fonts/Lora/lora-bold-webfont.svg#Lora Bold") format("svg"); }
 
 *,
 *:before,
@@ -3184,10 +3184,10 @@ img {
   @media screen and (-webkit-min-device-pixel-ratio: 0){
   @font-face{
     font-family: "Lora Regular";
-    src: url("../fonts/Lora/Lora-regular-webfont.svg#Lora Regular") format("svg"); }
+    src: url("../fonts/Lora/lora-regular-webfont.svg#Lora Regular") format("svg"); }
   @font-face{
     font-family: "Lora Bold";
-    src: url("../fonts/Lora/Lora-bold-webfont.svg#Lora Bold") format("svg"); } }
+    src: url("../fonts/Lora/lora-bold-webfont.svg#Lora Bold") format("svg"); } }
   @media (max-width: 960px){
   .header{
     margin-bottom: 10px; }
