@@ -493,23 +493,13 @@ th {
 */
 @font-face {
   font-family: "Lora Regular";
-  src: url("../fonts/Lora/Lora Regular/Lora-regular-webfont.eot"), local("Lora Regular");
-  src: url("../fonts/Lora/Lora Regular/Lora-regular-webfont.eot?#iefix") format("embedded-opentype"), local("Lora Regular"), url("../fonts/Lora/Lora Regular/Lora-regular-webfont.woff") format("woff"), url("../fonts/Lora/Lora Regular/Lora-regular-webfont.ttf") format("truetype"), url("../fonts/Lora/Lora Regular/Lora-regular-webfont.svg#Lora Regular") format("svg"); }
+  src: url("../fonts/Lora/Lora-regular-webfont.eot"), local("Lora Regular");
+  src: url("../fonts/Lora/Lora-regular-webfont.eot?#iefix") format("embedded-opentype"), local("Lora Regular"), url("../fonts/Lora/Lora-regular-webfont.woff") format("woff"), url("../fonts/Lora/Lora-regular-webfont.ttf") format("truetype"), url("../fonts/Lora/Lora-regular-webfont.svg#Lora Regular") format("svg"); }
 
 @font-face {
   font-family: "Lora Bold";
-  src: url("../fonts/Lora/Lora Bold/Lora-bold-webfont.eot"), local("Lora Bold");
-  src: url("../fonts/Lora/Lora Bold/Lora-bold-webfont.eot?#iefix") format("embedded-opentype"), local("Lora Bold"), url("../fonts/Lora/Lora Bold/Lora-bold-webfont.woff") format("woff"), url("../fonts/Lora/Lora Bold/Lora-bold-webfont.ttf") format("truetype"), url("../fonts/Lora/Lora Bold/Lora-bold-webfont.svg#Lora Bold") format("svg"); }
-
-@font-face {
-  font-family: "Lora Italic";
-  src: url("../fonts/Lora/Lora Italic/Lora-italic-webfont.eot"), local("Lora Italic");
-  src: url("../fonts/Lora/Lora Italic/Lora-italic-webfont.eot?#iefix") format("embedded-opentype"), local("Lora Italic"), url("../fonts/Lora/Lora Italic/Lora-italic-webfont.woff") format("woff"), url("../fonts/Lora/Lora Italic/Lora-italic-webfont.ttf") format("truetype"), url("../fonts/Lora/Lora Italic/Lora-italic-webfont.svg#Lora Italic") format("svg"); }
-
-@font-face {
-  font-family: "Lora Bold Italic";
-  src: url("../fonts/Lora/Lora Bold Italic/Lora-bolditalic-webfont.eot"), local("Lora Bold Italic");
-  src: url("../fonts/Lora/Lora Bold Italic/Lora-bolditalic-webfont.eot?#iefix") format("embedded-opentype"), local("Lora Bold Italic"), url("../fonts/Lora/Lora Bold Italic/Lora-bolditalic-webfont.woff") format("woff"), url("../fonts/Lora/Lora Bold Italic/Lora-bolditalic-webfont.ttf") format("truetype"), url("../fonts/Lora/Lora Bold Italic/Lora-bolditalic-webfont.svg#Lora Bold Italic") format("svg"); }
+  src: url("../fonts/Lora/Lora-bold-webfont.eot"), local("Lora Bold");
+  src: url("../fonts/Lora/Lora-bold-webfont.eot?#iefix") format("embedded-opentype"), local("Lora Bold"), url("../fonts/Lora/Lora-bold-webfont.woff") format("woff"), url("../fonts/Lora/Lora-bold-webfont.ttf") format("truetype"), url("../fonts/Lora/Lora-bold-webfont.svg#Lora Bold") format("svg"); }
 
 *,
 *:before,
@@ -3194,16 +3184,10 @@ img {
   @media screen and (-webkit-min-device-pixel-ratio: 0){
   @font-face{
     font-family: "Lora Regular";
-    src: url("../fonts/Lora/Lora Regular/Lora-regular-webfont.svg#Lora Regular") format("svg"); }
+    src: url("../fonts/Lora/Lora-regular-webfont.svg#Lora Regular") format("svg"); }
   @font-face{
     font-family: "Lora Bold";
-    src: url("../fonts/Lora/Lora Bold/Lora-bold-webfont.svg#Lora Bold") format("svg"); }
-  @font-face{
-    font-family: "Lora Italic";
-    src: url("../fonts/Lora/Lora Italic/Lora-italic-webfont.svg#Lora Italic") format("svg"); }
-  @font-face{
-    font-family: "Lora Bold Italic";
-    src: url("../fonts/Lora/Lora Bold Italic/Lora-bolditalic-webfont.svg#Lora Bold Italic") format("svg"); } }
+    src: url("../fonts/Lora/Lora-bold-webfont.svg#Lora Bold") format("svg"); } }
   @media (max-width: 960px){
   .header{
     margin-bottom: 10px; }
