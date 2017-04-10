@@ -1,0 +1,126 @@
+﻿// html, body { width: 100%; height: 100%; font-size: 0px; }
+// body {
+//   margin: 0;
+//   padding: 0; }
+div.bg {
+	width:860px;
+	height:382px;
+	background:#f4e6cc url('../img/bg.jpg') top center no-repeat;
+	margin:0 auto 0 auto;
+    position: relative;
+    // position: absolute;
+	// top:80px;
+	// left:80px;
+}
+
+canvas {
+  background: #f4e6cc;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;}
+
+div.textBlock {
+    width: 758px;
+    height: 215px;
+    background: #f4e6cc;
+    z-index: 1000;
+    position: absolute;
+	opacity:1;
+	top:470px;
+	left:105px;
+	border-radius:3px;
+	padding-left:25px;
+	padding-right:25px;
+	border:1px solid #d8c8b3;
+}
+div.textBlock h2, div.textBlock p {
+	color:#333;
+}
+div.textBlock h2 {
+    color: #333;
+    font-size: 23px;
+	padding-bottom:0;
+	margin-bottom:0;
+}
+div.textBlock p {
+    color: #333;
+    font-size: 17px;
+	line-height:1.4em;
+}
+div.textBlock p a.url {
+	color:#846828;
+	font-size:16px;
+	text-decoration:none;
+}
+div.urlOpenCatalog {
+	width: 251px;
+    height: 40px;
+    border: 1px solid #443f37;
+    padding: 9px 12px 6px 13px;
+    position: absolute;
+    top: 285px;
+    left: 308px;
+    z-index: 300;
+    border-radius: 4px;	
+	background: #b27827; /* Old browsers */
+	background: -moz-linear-gradient(top,  #b27827 1%, #ededed 4%, #d1b887 6%, #d1b887 27%, #af7b26 97%, #9b4d00 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #b27827 1%,#ededed 4%,#d1b887 6%,#d1b887 27%,#af7b26 97%,#9b4d00 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #b27827 1%,#ededed 4%,#d1b887 6%,#d1b887 27%,#af7b26 97%,#9b4d00 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b27827', endColorstr='#9b4d00',GradientType=0 ); /* IE6-9 */
+	cursor:pointer;
+}
+div.urlOpenCatalog a {
+	font-size:15px;
+	font-weight:bold;
+	font-family:'Arial','Tahoma',sans-serif;
+	text-decoration:none;
+	color:#333;
+	text-shadow: 0 1px #dab782;
+}
+div.urlOpenCatalog:hover {
+	width: 251px;
+    height: 40px;
+    border: 1px solid #443f37;
+    padding: 9px 12px 6px 13px;
+    position: absolute;
+    top: 285px;
+    left: 308px;
+    z-index: 300;
+    border-radius: 4px;
+    background: #b37f2d;
+	cursor:pointer;
+}
+div.urlOpenCatalog:hover a, div.urlOpenCatalog a:hover {
+	font-size:15px;
+	font-weight:bold;
+	font-family:'Arial','Tahoma',sans-serif;
+	text-decoration:none;
+	color:#333;
+}
+.slogan {
+	background:url('../img/slogan.png') center center no-repeat;
+	animation: slogan 10s;
+	width:869px;
+	height:390px;
+	position: absolute;
+	top:0;
+	left:0;
+	z-index:100;
+	-webkit-transition: slogan 5s ease-in 5s;
+     -moz-transition: slogan 5s ease-in 5s;
+     -o-transition: slogan 5s ease-in 5s;
+     transition: slogan 5s ease-in 5s;
+}
+@keyframes slogan { 
+  0% {
+    opacity:0;
+  }
+  60% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}

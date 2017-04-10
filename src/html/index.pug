@@ -216,10 +216,18 @@ block content
       // About section
       +b.SECTION.about-section
         +e.promo
-          img(src="img/cup.jpg", alt="cup")
+          .bg
+            canvas#myCanvas
+              img(src='bg.jpg', width='100%', height='100%', border='0')
+            .slogan
+              .urlOpenCatalog
+                a(href='page-category.html', title='Открыть каталог шоколадных подарков') Открыть каталог подарков
         +e.text-wrapper
           +e.img
             img(src="img/about-chocolate.png", alt="about")
+          +e.img-mobile
+            img(src="img/about-section-300-img.png", alt="about")
+          +e.A.link-mobile(href="page-category.html") Открыть каталог товаров
           +e.H3.title О шоколаде
           +e.text Наши шоколадные подарки и сувениры, представленные в каталоге — это шедевры шоколадного искусства, исполнение которых не оставляет сомнений в качестве продукта. Lorem ipsum dolor sit amet, con sectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
           +e.A.link(href="page-about.html") Узнать больше о шоколаде

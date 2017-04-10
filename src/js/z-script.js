@@ -1,5 +1,10 @@
 jQuery(document).ready(function($){  
 
+  /* coffee cup script */
+  if ($(window).width() >= 940) {
+    draw();  
+  }
+
   /* language change */
   $('.language__active .language__link').click(function(e){ 
     e.preventDefault();
