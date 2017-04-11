@@ -140,8 +140,8 @@ function placeholder(context) {
     addParticle(context)
   }
   // Initialise the scene and set the context if possible
-function init() {
-  var canvas = document.getElementById('myCanvas');
+var canvas = document.getElementById('myCanvas');
+function init() {  
   canvas.height = canvas.offsetHeight;
   canvas.width = canvas.offsetWidth;
   canvasHeight = canvas.height;
@@ -182,7 +182,9 @@ function update() {
 }
 
 // Initialize the scene
-init();
+if(canvas){
+  init();
+};
 
 // If the context is set then we can draw the scene (if not then the browser does not support canvas)
 if (context) {
