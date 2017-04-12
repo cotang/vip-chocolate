@@ -9,7 +9,8 @@
   }
 }
 .page{
-  width: $container-xl;
+  width: calc(100% - 40px);
+  max-width: $container-xl;
   margin: 0 auto;
   position: relative;
   @media (max-width: $screen-xl){
@@ -152,10 +153,16 @@
           @include font-family('Lora Bold', normal, normal);
           display: block;
         }
+        &:before{
+          bottom: 50%;
+          transform: translateY(50%);
+        }
       }
       &__link{
-        display: inline-block;
-        vertical-align: text-bottom;       
+        display: inline-block;         
+        @media (max-width: $screen-xl){
+          vertical-align: text-bottom;
+        }     
 
         &--viber{
           margin-left: 10px;

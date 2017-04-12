@@ -27,6 +27,7 @@
       padding: 10px 0;
       font-size: 11px;
       line-height: 2;
+      display: block;
     }
 
     &:before, &:after{
@@ -121,6 +122,7 @@
   }
 
   &__img{
+    display: block;
     border: 1px solid #fff;
     img{
       width: 100%;
@@ -136,6 +138,9 @@
       font-size: 13px;
       text-align: center;
       margin: 5px 15px 5px;
+    }
+    a{
+      color: #333;
     }
     span{
       text-transform: none;
@@ -180,6 +185,7 @@
 
 .category-sorting{
   display: flex;
+  align-items: baseline;
   color: #4d3e2b;
   &__type{
     margin: 0 15px;

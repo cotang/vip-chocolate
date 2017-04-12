@@ -1,6 +1,7 @@
 .footer{
   &__inner{
-    width: $container-xl;
+    width: calc(100% - 40px);
+    max-width: $container-xl;
     margin: 0 auto 10px;
     padding: 0 20px 0;
     display: flex;

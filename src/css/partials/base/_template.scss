@@ -24,6 +24,10 @@ body {
   @include font-family('Lora Regular', normal, normal);
   font-size: $font-size;
   line-height: $line-height;
+
+  @media (max-width: $screen-xl){
+    background-image: url(../img/mobile-background.jpg);
+  }  
 }
 
 

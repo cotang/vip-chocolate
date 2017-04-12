@@ -180,9 +180,15 @@
     position: relative;
     display: flex;
     flex-wrap: wrap;
+    // &:first-of-type{
+      // margin: 10px 25px 0;
+    // }
     @media (max-width: $screen-xl){
       margin: 20px 25px 0;
       padding: 10px 0 15px;
+      &:first-of-type{
+        margin: -10px 25px 0;
+      }
     }
 
     &:before{
@@ -335,6 +341,7 @@
   }
   &__count{
     display: inline-block;
+    vertical-align: text-bottom;
     margin-left: 5px;
     &--plus{
       @include sprite($s-item-plus);
@@ -449,6 +456,19 @@
       padding: 5px 5px;
     }
   }
+  &__option:checked{
+    color: black;
+    @include font-family('Lora Bold', normal, normal);
+  }
+  // select{
+  //   color: red;
+  // }
+  // option{
+  //   color: green;
+  // }
+  // option:checked{
+  //   color: yellow;
+  // }
 }
 
 .catalogue-item-brand{

@@ -48,6 +48,10 @@
     padding: 7px 20px 7px 10px;
     border-top: 1px solid #fff;
     position: relative;   
+
+    padding: 7px 20px 7px 20px;
+    @include font-family('Lora Bold', normal, normal);
+
     &:hover{
       background-color: #b49975;
       background-image: linear-gradient( 180deg, rgb(159,134,101) 0%, rgb(187,159,122) 100%);
@@ -75,6 +79,11 @@
     padding: 7px 20px;
     border-top: 1px solid #d2b993;
     display: none;
+
+    padding: 7px 12px 15px 12px;
+    display: none;
+    font-size: 95%;
+    line-height: 1.5em;
   }
   &__link-contact{
     display: block;

@@ -11,7 +11,7 @@
     overflow: hidden;
     border: 1px solid $brown-border;
     border-radius: 1px;
-    font-size: 14px;
+    font-size: 16px;
     position: relative;
     @media (max-width: $screen-xl){
       font-size: 12px;
@@ -54,7 +54,7 @@
     display: inline-block;
     a{
       display: block;
-      padding: 5px 7px;
+      padding: 5px 10px;
       @media (max-width: $screen-xl){
         padding: 5px 5px;
       }

@@ -32,7 +32,7 @@ block content
 
       // Catalogue
       +b.SECTION.catalogue
-        +e.H2.title
+        +e.H1.title
           span Каталог шоколадных подарков
         +e.gallery
           - for (var x = 0; x < 2; x++)
@@ -71,9 +71,9 @@ block content
           span Календарь праздников
         +e.text 
           p Сегодня 10 ноября 2016 года. 
-          p Скоро 15 ноября — праздник «
-            +e.SPAN.name Название
-            | ».
+          p Скоро 15 ноября — праздник 
+            +e.SPAN.name «Название»
+            | .
 
         +b.calendar
           +e.items
@@ -202,9 +202,9 @@ block content
                     td.unactive 3
                     td.unactive 4
           +e.links
-            +e.A.link--show-calendar(href="page-category.html") развернуть календарь 
+            +e.A.link--show-calendar(href="page-category.html") Развернуть календарь 
               span праздников
-            +e.A.link--events-list(href="page-category.html") все праздники 
+            +e.A.link--events-list(href="page-category.html") Все праздники 
               span одним списком
           +e.controls
             +e.A.prev(href="#", title="предыдущий месяц")

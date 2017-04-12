@@ -1,7 +1,7 @@
 mixin recommendationsItem(title, date, img)
 
   +b.recommendations-item
-    +e.img
+    +e.A.img(href="page-recommendations-single.html")
       img(src="img/" + img +".png", alt= title)
     +e.H3.title 
       a(href="page-recommendations-single.html") #{title}

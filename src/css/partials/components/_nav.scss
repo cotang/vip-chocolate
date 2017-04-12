@@ -1,5 +1,5 @@
 .nav{
-  margin: 0 90px 0;
+  margin: 1px 90px 0;
   // border-width: 5px 0;
   // border-color: transparent;
   // border-style: solid;
@@ -21,7 +21,7 @@
       position: absolute;
       top: 100%;
       background-color: #dec9ab;
-      z-index: 4;
+      z-index: 5;
       border: 1px solid #c4aa87;
       font-size: 14px;
       display: none; /**/
@@ -116,27 +116,20 @@
     }
 
     &--catalogue{
-      columns: 3;
+      columns: 2;
       width: 500px;
       @media (max-width: $screen-xl){
         columns: 1;
         width: auto;
       }
-      .nav__subitem{
-        border-bottom: none;
+      .nav__sublink{
+        @include font-family('Lora Bold', normal, normal);
       }
     }
   }
   &__subitem{
     display: inline-block;
     width: 100%;
-    border-bottom: 1px solid #fff;
-    @media (max-width: $screen-xl){
-      border-bottom: none;
-    }
-    &:last-of-type{
-      border-bottom: none;
-    }
   }
   &__sublink{
     display: block;
@@ -150,6 +143,32 @@
       text-shadow: none;
     }
   }
+  
+  &__subsublist{
+    padding-left: 10px;
+    list-style-type: none;
+    margin: 0;
+    @media (max-width: $screen-xl){
+      padding-left: 30px;
+    }
+  }
+  // &__subsubitem{
+
+  // }
+  &__subsublink{
+    display: block;
+    padding: 5px;
+    @media (max-width: $screen-xl){
+      // padding-left: 10px;
+    }
+    &:hover{  
+      color: #fff;
+      background-color: #b29c77;
+      text-shadow: none;
+    }
+  }
+
+
 
   &__hamburger{
     display: none;
@@ -182,5 +201,9 @@
     padding: 5px;
     border: 1px solid grey;
     background-color: $sand;
+    width: 350px;
+    @media (max-width: $screen-xl){
+      width: 200px;
+    }
   }
 }

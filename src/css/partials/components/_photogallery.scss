@@ -66,6 +66,9 @@
       transition: none;
       &:hover{
         color: #816037;
+        @media (max-width: $screen-xl){
+          color: transparent;
+        } 
       }      
       @media (max-width: $screen-xl){
         color: transparent;
@@ -136,7 +139,7 @@
   }
 
   &__thumb-gallery{
-    margin: 15px -4px 0;
+    margin: 15px -5px 0;
     position: relative;
     .slick-arrow{
       padding: 0;
@@ -152,15 +155,14 @@
       //   display: none;
       // }      
     }
-    .slick-prev{
+    .slick-arrow{
       position: absolute;
-      left: 3px;
       bottom: 0;
-      width: 85px;
+      width: 95px;
       height: 85px;
       background-color: rgba(0,0,0,.5);
       @media (max-width: $screen-xl){
-        width: 55px;
+        width: 62px;
         height: 55px;
       } 
       &:after{
@@ -169,36 +171,27 @@
         top: 50%;
         left: 50%;
         @include sprite($s-promo-arrow);
+      }
+    }
+    .slick-prev{
+      left: 0;
+      &:after{
         transform: rotate(180deg) translate(50%, 50%);
       }
     }
-    .slick-next{      
-      position: absolute;
-      right: 3px;
-      bottom: 0;
-      width: 85px;
-      height: 85px;
-      background-color: rgba(0,0,0,.5);
-      @media (max-width: $screen-xl){
-        width: 55px;
-        height: 55px;
-      } 
+    .slick-next{
+      right: 0;
       &:after{
-        content: '';
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        @include sprite($s-promo-arrow);
         transform: translate(-50%, -50%);
       }
     }
   }
   &__thumb-img{
-    width: 85px;
+    // width: 85px;
     height: 85px;
     padding: 0 3px;
     @media (max-width: $screen-xl){
-      width: 55px;
+      // width: 55px;
       height: 55px;
     } 
     img{

@@ -62,6 +62,7 @@
 
 
   &__img{
+    display: block;
     position: relative;
     &:after{
       content: '';

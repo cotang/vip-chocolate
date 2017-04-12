@@ -15,6 +15,13 @@
     font-size: 14px;
     padding: 7px 18px;
   }
+  &:hover{
+    text-shadow: none;
+    border: 1px solid #a18560;
+    background-image: none;
+    background: #a18560;
+    color: #fff;
+  }
 
   &--blue{
     color: rgb(103, 116, 129);
@@ -22,6 +29,13 @@
     border-radius: 3px;
     background-image: linear-gradient( 180deg, rgb(255,255,255) 0%, rgb(191,210,225) 100%);
     box-shadow: 0px 1px 1px 0px rgba(255, 255, 255, 0.004);
+    &:hover{
+      color: #fff;
+      border: 1px solid #677481 !important;
+      text-shadow: none;
+      background-image: none;
+      background-color: #628099;
+    }
   }
 }
 

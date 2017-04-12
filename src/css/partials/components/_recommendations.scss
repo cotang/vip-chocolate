@@ -11,6 +11,7 @@
 }
 
 .recommendations-item{
+  display: block;
   flex: 0 0 33.3333%;
   max-width: 33.3333%;
   padding: 0 15px;
@@ -24,6 +25,7 @@
   }
 
   &__img{
+    display: block;
     position: relative;
     &:after{
       content: '';
@@ -63,6 +65,7 @@
     }
   }
   &__date{
+    display: block;
     color: #990000;
     font-size: 12px;
     line-height: (25/12);

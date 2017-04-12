@@ -2,9 +2,10 @@ mixin goodsItem(title, price, img, bonusClass)
 
   +e.item
     +b.goods-item(class= bonusClass)
-      +e.img
+      +e.A.img(href="page-item.html")
         img(src="img/" + img +".png", alt= title)
-      +e.H3.title #{title}
+      +e.H3.title 
+        a(href="page-item.html") #{title}
       +e.price 
         span Цена: 
         | #{price} рублей

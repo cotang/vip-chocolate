@@ -5,7 +5,8 @@
   }
 
   &__inner{
-    width: $container-xl;
+    width: calc(100% - 40px);
+    max-width: $container-xl;
     margin: 0 auto 0;
     position: relative;
     @media (max-width: $screen-xl){
@@ -138,11 +139,16 @@
     top: 100%;
     left: 0;
     width: 100%;
-    z-index: 1;
-    background-color: #aa8b5f;
-    border: 1px solid #a28762; 
-    a{
-      color: #fff;
+    transform: translateY(-2px); 
+    z-index: 1;       
+    border: 1px solid #a28762;
+    border-top: 1px solid #e5caaa;
+    background-image: linear-gradient(180deg, #dfc2a2, #e5caaa, #e6c7a7 14.2%, #e4c29f 32.1%, #dcb07f 82.1%, #d9af7c 89.2%, #daad79); 
+    a{      
+      &:hover{
+        background-color: #aa8b5f;
+        color: #fff;
+      }
     }
   }
   &__item{    
@@ -165,6 +171,7 @@
       display: inline-block;
       vertical-align: text-top;
       margin-right: 5px;
+      border: 1px solid #a28762;
       @media (max-width: $screen-xl){
         transform: scale(0.8);
       }
