@@ -3,10 +3,12 @@
 //   margin: 0;
 //   padding: 0; }
 div.bg {
-	width:860px;
+
+	// width:860px;
 	height:382px;
 	background:#f4e6cc url('../img/bg.jpg') top center no-repeat;
-	margin:0 auto 0 auto;
+	// margin:0 auto 0 auto;
+    margin: 0 40px;
     position: relative;
     // position: absolute;
 	// top:80px;
@@ -22,7 +24,7 @@ canvas {
   opacity: 1;}
 
 div.textBlock {
-    width: 758px;
+    // width: 758px;
     height: 215px;
     background: #f4e6cc;
     z-index: 1000;
@@ -61,7 +63,9 @@ div.urlOpenCatalog {
     padding: 9px 12px 6px 13px;
     position: absolute;
     top: 285px;
-    left: 308px;
+    // left: 308px;
+    left: 50%;
+    transform: translateX(-50%);
     z-index: 300;
     border-radius: 4px;	
 	background: #b27827; /* Old browsers */
@@ -86,7 +90,7 @@ div.urlOpenCatalog:hover {
     padding: 9px 12px 6px 13px;
     position: absolute;
     top: 285px;
-    left: 308px;
+    // left: 308px;
     z-index: 300;
     border-radius: 4px;
     background: #b37f2d;
@@ -102,7 +106,8 @@ div.urlOpenCatalog:hover a, div.urlOpenCatalog a:hover {
 .slogan {
 	background:url('../img/slogan.png') center center no-repeat;
 	animation: slogan 10s;
-	width:869px;
+	// width:869px;
+    width: 100%;
 	height:390px;
 	position: absolute;
 	top:0;

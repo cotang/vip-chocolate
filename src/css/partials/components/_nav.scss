@@ -5,6 +5,9 @@
   // border-style: solid;
   // border-image: url(../img/menu-border.png) 5 0 stretch;
   position: relative;
+  @media ( min-width : ($screen-xl + 1)) and ( max-width : $screen-xxl) {
+    margin: 1px 50px 0;
+  }
   @media (max-width: $screen-xl){
     margin: 0 40px 0;
     display: flex;
@@ -17,6 +20,10 @@
     font-size: 17px;
     text-shadow: $text-shadow-sand;
     @include font-family('Lora Bold', normal, normal);
+    @media ( min-width : ($screen-xl + 1)) and ( max-width : $screen-xxl) {
+      font-size: 14px;
+    }
+
     @media (max-width: $screen-xl){
       position: absolute;
       top: 100%;
@@ -77,7 +84,10 @@
   &__link{
     padding: 10px 5px;
     border: 1px solid transparent;
-    display: inline-block;  
+    display: inline-block; 
+    @media ( min-width : ($screen-xl + 1)) and ( max-width : $screen-xxl) {
+      padding: 10px 3px;
+    }
     @media (max-width: $screen-xl){
       width: 100%;
       padding: 5px 5px;

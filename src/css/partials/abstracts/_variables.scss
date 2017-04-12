@@ -19,12 +19,13 @@ $screen-xs:                   0; // Extra small screen / phone
 // $screen-md:                   768px; // Medium screen / tablet
 // $screen-xl:                   960px; // Extra large screen / wide desktop
 
-$screen-xl:                   768px; // Extra large screen / wide desktop
-
+$screen-xl:                   760px; // Extra large screen / wide desktop
+$screen-xxl:                  940px; // Extra large screen / wide desktop
 
 
 $container-sm:                300px;
 $container-xl:                940px;
+
 
 $container-max-widths: (
         sm:                   480px,

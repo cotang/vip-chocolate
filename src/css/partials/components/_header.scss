@@ -86,6 +86,14 @@
 .logo{
   display: block;
   text-align: center;
+  @media ( min-width : ($screen-xl + 1)) and ( max-width : $screen-xxl) {
+    max-width: 80%;
+    margin: 40px auto 0;
+  }
+  // @media (max-width: $screen-xl){
+  //   background-color: red;
+  // }
+
   span{
     display: block;
     max-width: 640px;

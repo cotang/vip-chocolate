@@ -28,14 +28,22 @@
     }
   }
   &__text{
+    padding-right: 20px;
     flex: 0 0 65%;
     max-width: 65%;
     @media (max-width: $screen-xl){
+      padding-right: 0;
       flex: 0 0 100%;
       max-width: 100%;
     }
   }
   &__developer{
+    flex: 0 0 35%;
+    max-width: 35%;
+    @media (max-width: $screen-xl){
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
     a{
       color: #9a8d7b;
     }

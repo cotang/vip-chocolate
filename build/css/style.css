@@ -1626,14 +1626,17 @@ img {
     .catalogue-item__value--big {
       font-size: 26px; }
   .catalogue-item__price {
-    margin: 20px -20px 25px;
+    margin: 20px -20px 0;
     padding: 15px 20px;
     border-top: 1px solid #e7e7e7;
     border-bottom: 1px solid #e7e7e7; }
-  .catalogue-item__summary span {
-    font-family: "Lora Bold", Arial, sans-serif;
-    font-weight: normal;
-    font-style: normal; }
+  .catalogue-item__summary {
+    display: inline-block;
+    margin-top: 10px; }
+    .catalogue-item__summary span {
+      font-family: "Lora Bold", Arial, sans-serif;
+      font-weight: normal;
+      font-style: normal; }
   .catalogue-item__count {
     display: inline-block;
     vertical-align: text-bottom;
@@ -1652,7 +1655,7 @@ img {
     position: relative;
     bottom: 2px;
     padding: 7px 35px;
-    margin: 0 5px; }
+    margin: 25px 5px 0; }
   .catalogue-item__recipe {
     -webkit-flex: 0 0 52.5%;
         -ms-flex: 0 0 52.5%;
@@ -2110,12 +2113,18 @@ img {
         -ms-flex-pack: justify;
             justify-content: space-between; }
   .copyright__text {
+    padding-right: 20px;
     -webkit-flex: 0 0 65%;
         -ms-flex: 0 0 65%;
             flex: 0 0 65%;
     max-width: 65%; }
-  .copyright__developer a {
-    color: #9a8d7b; }
+  .copyright__developer {
+    -webkit-flex: 0 0 35%;
+        -ms-flex: 0 0 35%;
+            flex: 0 0 35%;
+    max-width: 35%; }
+    .copyright__developer a {
+      color: #9a8d7b; }
 
 .brand-examples {
   margin: 0 90px 10px;
@@ -2805,7 +2814,7 @@ img {
     margin-bottom: 10px; }
   .goods-item--next .goods-item__text {
     display: block;
-    margin: 0 15px;
+    margin: 0 15px 70px;
     font-size: 13px;
     line-height: 1.69231;
     position: relative; }
@@ -3249,10 +3258,9 @@ img {
     padding: 10px 0; }
 
 div.bg {
-  width: 860px;
   height: 382px;
   background: #f4e6cc url("../img/bg.jpg") top center no-repeat;
-  margin: 0 auto 0 auto;
+  margin: 0 40px;
   position: relative; }
 
 canvas {
@@ -3264,7 +3272,6 @@ canvas {
   opacity: 1; }
 
 div.textBlock {
-  width: 758px;
   height: 215px;
   background: #f4e6cc;
   z-index: 1000;
@@ -3303,7 +3310,10 @@ div.urlOpenCatalog {
   padding: 9px 12px 6px 13px;
   position: absolute;
   top: 285px;
-  left: 308px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
   z-index: 300;
   border-radius: 4px;
   background: #b27827;
@@ -3331,7 +3341,6 @@ div.urlOpenCatalog:hover {
   padding: 9px 12px 6px 13px;
   position: absolute;
   top: 285px;
-  left: 308px;
   z-index: 300;
   border-radius: 4px;
   background: #b37f2d;
@@ -3348,7 +3357,7 @@ div.urlOpenCatalog:hover a, div.urlOpenCatalog a:hover {
   background: url("../img/slogan.png") center center no-repeat;
   -webkit-animation: slogan 10s;
           animation: slogan 10s;
-  width: 869px;
+  width: 100%;
   height: 390px;
   position: absolute;
   top: 0;
@@ -3380,7 +3389,7 @@ div.urlOpenCatalog:hover a, div.urlOpenCatalog a:hover {
     font-family: "Lora Bold";
     src: url("../fonts/Lora/lora-bold-webfont.svg#Lora Bold") format("svg"); } }
 
-@media (max-width: 768px){
+@media (max-width: 760px){
   body{
     background-image: url(../img/mobile-background.jpg); }
   .header{
@@ -3811,11 +3820,13 @@ div.urlOpenCatalog:hover a, div.urlOpenCatalog a:hover {
     margin: 0 0 10px;
     padding: 15px 0; }
   .catalogue-item__summary{
+    display: inline;
     font-size: 12px; }
   .catalogue-item .btn{
     font-size: 12px;
     padding: 2px 10px;
-    bottom: 6px; }
+    bottom: 2px;
+    margin: 0 5px 0; }
   .catalogue-item__recipe{
     -webkit-flex: 0 0 100%;
     -ms-flex: 0 0 100%;
@@ -4014,6 +4025,12 @@ div.urlOpenCatalog:hover a, div.urlOpenCatalog a:hover {
     max-width: 100%;
     margin: 5px 0 5px; }
   .copyright__text{
+    padding-right: 0;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%; }
+  .copyright__developer{
     -webkit-flex: 0 0 100%;
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
@@ -4365,3 +4382,16 @@ div.urlOpenCatalog:hover a, div.urlOpenCatalog a:hover {
   .photogallery__link{
     font-size: 11px;
     padding-bottom: 0; } }
+
+@media (min-width: 761px) and (max-width: 940px){
+  .logo{
+    max-width: 80%;
+    margin: 40px auto 0; }
+  .nav{
+    margin: 1px 50px 0; }
+  .nav__list{
+    font-size: 14px; }
+  .nav__link{
+    padding: 10px 3px; }
+  .photogallery__img{
+    width: 100%; } }

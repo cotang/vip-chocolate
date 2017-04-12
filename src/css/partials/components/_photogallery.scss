@@ -118,6 +118,9 @@
   &__img{
     width: 755px;
     height: 535px;
+    @media ( min-width : ($screen-xl + 1)) and ( max-width : $screen-xxl) {
+      width: 100%;
+    }
     @media (max-width: $screen-xl){
       height: 176px;
       width: 100%;

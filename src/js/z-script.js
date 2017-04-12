@@ -2,7 +2,7 @@ jQuery(document).ready(function($){
 
   /* breakpoints */
   var screenMonitor = 940;
-  var screenTablet = 768;
+  var screenTablet = 760;
 
   /* language change */
   $('.language__active .language__link').click(function(e){ 
